@@ -1,0 +1,12 @@
+Assembly-CSharp.dll
+Assembly-UnityScript.dll
+Boo.Lang.dll
+Newtonsoft.Json.dll
+UnityEngine.Analytics.dll
+nunit.framework.dll
+UnityEngine.UI.dll
+GETween.dll
+UnityEngine.HoloLens.dll
+UnityEngine.Networking.dll
+UnityEngine.VR.dll
+GUIAnimatorFREE.dll

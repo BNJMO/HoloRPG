@@ -1,0 +1,1422 @@
+fileFormatVersion: 2
+guid: 3814a5fe1ef27bb45a1266c62bca9c94
+timeCreated: 1485532452
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: eyebrow_L
+    100002: eyebrow_L_2
+    100004: eyebrow_L_3
+    100006: eyebrow_L_4
+    100008: eyebrow_master_L
+    100010: eyebrow_master_R
+    100012: eyebrow_R
+    100014: eyebrow_R_2
+    100016: eyebrow_R_3
+    100018: eyebrow_R_4
+    100020: paula_body
+    100022: paula_eye_ball_L
+    100024: paula_eye_ball_R
+    100026: paula_eye_iris_L
+    100028: paula_eye_iris_L_10
+    100030: paula_eye_iris_L_11
+    100032: paula_eye_iris_L_12
+    100034: paula_eye_iris_L_2
+    100036: paula_eye_iris_L_3
+    100038: paula_eye_iris_L_4
+    100040: paula_eye_iris_L_5
+    100042: paula_eye_iris_L_6
+    100044: paula_eye_iris_L_7
+    100046: paula_eye_iris_L_8
+    100048: paula_eye_iris_L_9
+    100050: paula_eye_iris_R
+    100052: paula_eye_iris_R_10
+    100054: paula_eye_iris_R_11
+    100056: paula_eye_iris_R_12
+    100058: paula_eye_iris_R_2
+    100060: paula_eye_iris_R_3
+    100062: paula_eye_iris_R_4
+    100064: paula_eye_iris_R_5
+    100066: paula_eye_iris_R_6
+    100068: paula_eye_iris_R_7
+    100070: paula_eye_iris_R_8
+    100072: paula_eye_iris_R_9
+    100074: paula_eye_lid_lower_L
+    100076: paula_eye_lid_lower_R
+    100078: paula_eye_lid_upper_L
+    100080: paula_eye_lid_upper_R
+    100082: paula_eye_master_L
+    100084: paula_eye_master_R
+    100086: paula_hand_L
+    100088: paula_hand_R
+    100090: paula_hand_thumb_L
+    100092: paula_hand_thumb_R
+    100094: paula_head
+    100096: //RootNode
+    100098: paula_neck
+    100100: paula_root
+    100102: paula_speaker
+    100104: paula_thruster
+    100106: paula_thruster_exhaust
+    400000: eyebrow_L
+    400002: eyebrow_L_2
+    400004: eyebrow_L_3
+    400006: eyebrow_L_4
+    400008: eyebrow_master_L
+    400010: eyebrow_master_R
+    400012: eyebrow_R
+    400014: eyebrow_R_2
+    400016: eyebrow_R_3
+    400018: eyebrow_R_4
+    400020: paula_body
+    400022: paula_eye_ball_L
+    400024: paula_eye_ball_R
+    400026: paula_eye_iris_L
+    400028: paula_eye_iris_L_10
+    400030: paula_eye_iris_L_11
+    400032: paula_eye_iris_L_12
+    400034: paula_eye_iris_L_2
+    400036: paula_eye_iris_L_3
+    400038: paula_eye_iris_L_4
+    400040: paula_eye_iris_L_5
+    400042: paula_eye_iris_L_6
+    400044: paula_eye_iris_L_7
+    400046: paula_eye_iris_L_8
+    400048: paula_eye_iris_L_9
+    400050: paula_eye_iris_R
+    400052: paula_eye_iris_R_10
+    400054: paula_eye_iris_R_11
+    400056: paula_eye_iris_R_12
+    400058: paula_eye_iris_R_2
+    400060: paula_eye_iris_R_3
+    400062: paula_eye_iris_R_4
+    400064: paula_eye_iris_R_5
+    400066: paula_eye_iris_R_6
+    400068: paula_eye_iris_R_7
+    400070: paula_eye_iris_R_8
+    400072: paula_eye_iris_R_9
+    400074: paula_eye_lid_lower_L
+    400076: paula_eye_lid_lower_R
+    400078: paula_eye_lid_upper_L
+    400080: paula_eye_lid_upper_R
+    400082: paula_eye_master_L
+    400084: paula_eye_master_R
+    400086: paula_hand_L
+    400088: paula_hand_R
+    400090: paula_hand_thumb_L
+    400092: paula_hand_thumb_R
+    400094: paula_head
+    400096: //RootNode
+    400098: paula_neck
+    400100: paula_root
+    400102: paula_speaker
+    400104: paula_thruster
+    400106: paula_thruster_exhaust
+    2300000: eyebrow_L
+    2300002: eyebrow_L_2
+    2300004: eyebrow_L_3
+    2300006: eyebrow_L_4
+    2300008: eyebrow_R
+    2300010: eyebrow_R_2
+    2300012: eyebrow_R_3
+    2300014: eyebrow_R_4
+    2300016: paula_body
+    2300018: paula_eye_ball_L
+    2300020: paula_eye_ball_R
+    2300022: paula_eye_iris_L
+    2300024: paula_eye_iris_L_10
+    2300026: paula_eye_iris_L_11
+    2300028: paula_eye_iris_L_12
+    2300030: paula_eye_iris_L_2
+    2300032: paula_eye_iris_L_3
+    2300034: paula_eye_iris_L_4
+    2300036: paula_eye_iris_L_5
+    2300038: paula_eye_iris_L_6
+    2300040: paula_eye_iris_L_7
+    2300042: paula_eye_iris_L_8
+    2300044: paula_eye_iris_L_9
+    2300046: paula_eye_iris_R
+    2300048: paula_eye_iris_R_10
+    2300050: paula_eye_iris_R_11
+    2300052: paula_eye_iris_R_12
+    2300054: paula_eye_iris_R_2
+    2300056: paula_eye_iris_R_3
+    2300058: paula_eye_iris_R_4
+    2300060: paula_eye_iris_R_5
+    2300062: paula_eye_iris_R_6
+    2300064: paula_eye_iris_R_7
+    2300066: paula_eye_iris_R_8
+    2300068: paula_eye_iris_R_9
+    2300070: paula_eye_lid_lower_L
+    2300072: paula_eye_lid_lower_R
+    2300074: paula_eye_lid_upper_L
+    2300076: paula_eye_lid_upper_R
+    2300078: paula_hand_L
+    2300080: paula_hand_R
+    2300082: paula_hand_thumb_L
+    2300084: paula_hand_thumb_R
+    2300086: paula_head
+    2300088: paula_speaker
+    2300090: paula_thruster
+    2300092: paula_thruster_exhaust
+    3300000: eyebrow_L
+    3300002: eyebrow_L_2
+    3300004: eyebrow_L_3
+    3300006: eyebrow_L_4
+    3300008: eyebrow_R
+    3300010: eyebrow_R_2
+    3300012: eyebrow_R_3
+    3300014: eyebrow_R_4
+    3300016: paula_body
+    3300018: paula_eye_ball_L
+    3300020: paula_eye_ball_R
+    3300022: paula_eye_iris_L
+    3300024: paula_eye_iris_L_10
+    3300026: paula_eye_iris_L_11
+    3300028: paula_eye_iris_L_12
+    3300030: paula_eye_iris_L_2
+    3300032: paula_eye_iris_L_3
+    3300034: paula_eye_iris_L_4
+    3300036: paula_eye_iris_L_5
+    3300038: paula_eye_iris_L_6
+    3300040: paula_eye_iris_L_7
+    3300042: paula_eye_iris_L_8
+    3300044: paula_eye_iris_L_9
+    3300046: paula_eye_iris_R
+    3300048: paula_eye_iris_R_10
+    3300050: paula_eye_iris_R_11
+    3300052: paula_eye_iris_R_12
+    3300054: paula_eye_iris_R_2
+    3300056: paula_eye_iris_R_3
+    3300058: paula_eye_iris_R_4
+    3300060: paula_eye_iris_R_5
+    3300062: paula_eye_iris_R_6
+    3300064: paula_eye_iris_R_7
+    3300066: paula_eye_iris_R_8
+    3300068: paula_eye_iris_R_9
+    3300070: paula_eye_lid_lower_L
+    3300072: paula_eye_lid_lower_R
+    3300074: paula_eye_lid_upper_L
+    3300076: paula_eye_lid_upper_R
+    3300078: paula_hand_L
+    3300080: paula_hand_R
+    3300082: paula_hand_thumb_L
+    3300084: paula_hand_thumb_R
+    3300086: paula_head
+    3300088: paula_speaker
+    3300090: paula_thruster
+    3300092: paula_thruster_exhaust
+    4300000: paula_head
+    4300002: eyebrow_R
+    4300004: eyebrow_R_2
+    4300006: eyebrow_R_3
+    4300008: eyebrow_R_4
+    4300010: eyebrow_L
+    4300012: eyebrow_L_2
+    4300014: eyebrow_L_3
+    4300016: eyebrow_L_4
+    4300018: paula_speaker
+    4300020: paula_eye_lid_upper_L
+    4300022: paula_eye_lid_lower_L
+    4300024: paula_eye_ball_L
+    4300026: paula_eye_iris_L
+    4300028: paula_eye_iris_L_2
+    4300030: paula_eye_iris_L_3
+    4300032: paula_eye_iris_L_4
+    4300034: paula_eye_iris_L_5
+    4300036: paula_eye_iris_L_6
+    4300038: paula_eye_iris_L_7
+    4300040: paula_eye_iris_L_8
+    4300042: paula_eye_iris_L_9
+    4300044: paula_eye_iris_L_10
+    4300046: paula_eye_iris_L_11
+    4300048: paula_eye_iris_L_12
+    4300050: paula_eye_lid_upper_R
+    4300052: paula_eye_lid_lower_R
+    4300054: paula_eye_ball_R
+    4300056: paula_eye_iris_R
+    4300058: paula_eye_iris_R_2
+    4300060: paula_eye_iris_R_3
+    4300062: paula_eye_iris_R_4
+    4300064: paula_eye_iris_R_5
+    4300066: paula_eye_iris_R_6
+    4300068: paula_eye_iris_R_7
+    4300070: paula_eye_iris_R_8
+    4300072: paula_eye_iris_R_9
+    4300074: paula_eye_iris_R_10
+    4300076: paula_eye_iris_R_11
+    4300078: paula_eye_iris_R_12
+    4300080: paula_body
+    4300082: paula_thruster
+    4300084: paula_thruster_exhaust
+    4300086: paula_hand_R
+    4300088: paula_hand_thumb_R
+    4300090: paula_hand_L
+    4300092: paula_hand_thumb_L
+    7400000: 1_idle
+    7400002: 1_agree
+    7400004: 1_hovering
+    7400006: 2_blink
+    7400008: 2_thrust
+    7400010: 1_followme
+    7400012: 1_talk
+    7400014: 1_welcome
+    7400016: 1_welcome0
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: 1_idle
+      takeName: 1_idle
+      firstFrame: 0
+      lastFrame: 48
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: paula_root
+        weight: 1
+      - path: paula_root/paula_body
+        weight: 1
+      - path: paula_root/paula_body/paula_thruster
+        weight: 1
+      - path: paula_root/paula_body/paula_thruster/paula_thruster_exhaust
+        weight: 1
+      - path: paula_root/paula_hand_L
+        weight: 1
+      - path: paula_root/paula_hand_L/paula_hand_thumb_L
+        weight: 1
+      - path: paula_root/paula_hand_R
+        weight: 1
+      - path: paula_root/paula_hand_R/paula_hand_thumb_R
+        weight: 1
+      - path: paula_root/paula_neck
+        weight: 1
+      - path: paula_root/paula_neck/paula_head
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/eyebrow_master_L
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/eyebrow_master_L/eyebrow_L
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/eyebrow_master_L/eyebrow_L/eyebrow_L_2
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/eyebrow_master_L/eyebrow_L_3
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/eyebrow_master_L/eyebrow_L_3/eyebrow_L_4
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/eyebrow_master_R
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/eyebrow_master_R/eyebrow_R
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/eyebrow_master_R/eyebrow_R/eyebrow_R_2
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/eyebrow_master_R/eyebrow_R_3
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/eyebrow_master_R/eyebrow_R_3/eyebrow_R_4
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_L
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_L/paula_eye_ball_L
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_L/paula_eye_ball_L/paula_eye_iris_L
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_L/paula_eye_ball_L/paula_eye_iris_L_2
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_L/paula_eye_ball_L/paula_eye_iris_L_3
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_L/paula_eye_ball_L/paula_eye_iris_L_4
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_L/paula_eye_ball_L/paula_eye_iris_L_5
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_L/paula_eye_ball_L/paula_eye_iris_L_6
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_L/paula_eye_ball_L/paula_eye_iris_L_7
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_L/paula_eye_ball_L/paula_eye_iris_L_8
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_L/paula_eye_ball_L/paula_eye_iris_L_9
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_L/paula_eye_ball_L/paula_eye_iris_L_10
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_L/paula_eye_ball_L/paula_eye_iris_L_11
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_L/paula_eye_ball_L/paula_eye_iris_L_12
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_L/paula_eye_lid_lower_L
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_L/paula_eye_lid_upper_L
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_R
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_R/paula_eye_ball_R
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_R/paula_eye_ball_R/paula_eye_iris_R
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_R/paula_eye_ball_R/paula_eye_iris_R_2
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_R/paula_eye_ball_R/paula_eye_iris_R_3
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_R/paula_eye_ball_R/paula_eye_iris_R_4
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_R/paula_eye_ball_R/paula_eye_iris_R_5
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_R/paula_eye_ball_R/paula_eye_iris_R_6
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_R/paula_eye_ball_R/paula_eye_iris_R_7
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_R/paula_eye_ball_R/paula_eye_iris_R_8
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_R/paula_eye_ball_R/paula_eye_iris_R_9
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_R/paula_eye_ball_R/paula_eye_iris_R_10
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_R/paula_eye_ball_R/paula_eye_iris_R_11
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_R/paula_eye_ball_R/paula_eye_iris_R_12
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_R/paula_eye_lid_lower_R
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_R/paula_eye_lid_upper_R
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_speaker
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: 1_agree
+      takeName: 1_agree
+      firstFrame: 0
+      lastFrame: 24
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: paula_root
+        weight: 1
+      - path: paula_root/paula_body
+        weight: 1
+      - path: paula_root/paula_body/paula_thruster
+        weight: 1
+      - path: paula_root/paula_body/paula_thruster/paula_thruster_exhaust
+        weight: 1
+      - path: paula_root/paula_hand_L
+        weight: 1
+      - path: paula_root/paula_hand_L/paula_hand_thumb_L
+        weight: 1
+      - path: paula_root/paula_hand_R
+        weight: 1
+      - path: paula_root/paula_hand_R/paula_hand_thumb_R
+        weight: 1
+      - path: paula_root/paula_neck
+        weight: 1
+      - path: paula_root/paula_neck/paula_head
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/eyebrow_master_L
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/eyebrow_master_L/eyebrow_L
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/eyebrow_master_L/eyebrow_L/eyebrow_L_2
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/eyebrow_master_L/eyebrow_L_3
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/eyebrow_master_L/eyebrow_L_3/eyebrow_L_4
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/eyebrow_master_R
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/eyebrow_master_R/eyebrow_R
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/eyebrow_master_R/eyebrow_R/eyebrow_R_2
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/eyebrow_master_R/eyebrow_R_3
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/eyebrow_master_R/eyebrow_R_3/eyebrow_R_4
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_L
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_L/paula_eye_ball_L
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_L/paula_eye_ball_L/paula_eye_iris_L
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_L/paula_eye_ball_L/paula_eye_iris_L_2
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_L/paula_eye_ball_L/paula_eye_iris_L_3
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_L/paula_eye_ball_L/paula_eye_iris_L_4
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_L/paula_eye_ball_L/paula_eye_iris_L_5
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_L/paula_eye_ball_L/paula_eye_iris_L_6
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_L/paula_eye_ball_L/paula_eye_iris_L_7
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_L/paula_eye_ball_L/paula_eye_iris_L_8
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_L/paula_eye_ball_L/paula_eye_iris_L_9
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_L/paula_eye_ball_L/paula_eye_iris_L_10
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_L/paula_eye_ball_L/paula_eye_iris_L_11
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_L/paula_eye_ball_L/paula_eye_iris_L_12
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_L/paula_eye_lid_lower_L
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_L/paula_eye_lid_upper_L
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_R
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_R/paula_eye_ball_R
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_R/paula_eye_ball_R/paula_eye_iris_R
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_R/paula_eye_ball_R/paula_eye_iris_R_2
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_R/paula_eye_ball_R/paula_eye_iris_R_3
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_R/paula_eye_ball_R/paula_eye_iris_R_4
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_R/paula_eye_ball_R/paula_eye_iris_R_5
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_R/paula_eye_ball_R/paula_eye_iris_R_6
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_R/paula_eye_ball_R/paula_eye_iris_R_7
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_R/paula_eye_ball_R/paula_eye_iris_R_8
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_R/paula_eye_ball_R/paula_eye_iris_R_9
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_R/paula_eye_ball_R/paula_eye_iris_R_10
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_R/paula_eye_ball_R/paula_eye_iris_R_11
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_R/paula_eye_ball_R/paula_eye_iris_R_12
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_R/paula_eye_lid_lower_R
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_R/paula_eye_lid_upper_R
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_speaker
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: 1_hovering
+      takeName: 1_hovering
+      firstFrame: 0
+      lastFrame: 48
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: paula_root
+        weight: 1
+      - path: paula_root/paula_body
+        weight: 1
+      - path: paula_root/paula_body/paula_thruster
+        weight: 1
+      - path: paula_root/paula_body/paula_thruster/paula_thruster_exhaust
+        weight: 1
+      - path: paula_root/paula_hand_L
+        weight: 1
+      - path: paula_root/paula_hand_L/paula_hand_thumb_L
+        weight: 1
+      - path: paula_root/paula_hand_R
+        weight: 1
+      - path: paula_root/paula_hand_R/paula_hand_thumb_R
+        weight: 1
+      - path: paula_root/paula_neck
+        weight: 1
+      - path: paula_root/paula_neck/paula_head
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/eyebrow_master_L
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/eyebrow_master_L/eyebrow_L
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/eyebrow_master_L/eyebrow_L/eyebrow_L_2
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/eyebrow_master_L/eyebrow_L_3
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/eyebrow_master_L/eyebrow_L_3/eyebrow_L_4
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/eyebrow_master_R
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/eyebrow_master_R/eyebrow_R
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/eyebrow_master_R/eyebrow_R/eyebrow_R_2
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/eyebrow_master_R/eyebrow_R_3
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/eyebrow_master_R/eyebrow_R_3/eyebrow_R_4
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_L
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_L/paula_eye_ball_L
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_L/paula_eye_ball_L/paula_eye_iris_L
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_L/paula_eye_ball_L/paula_eye_iris_L_2
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_L/paula_eye_ball_L/paula_eye_iris_L_3
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_L/paula_eye_ball_L/paula_eye_iris_L_4
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_L/paula_eye_ball_L/paula_eye_iris_L_5
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_L/paula_eye_ball_L/paula_eye_iris_L_6
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_L/paula_eye_ball_L/paula_eye_iris_L_7
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_L/paula_eye_ball_L/paula_eye_iris_L_8
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_L/paula_eye_ball_L/paula_eye_iris_L_9
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_L/paula_eye_ball_L/paula_eye_iris_L_10
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_L/paula_eye_ball_L/paula_eye_iris_L_11
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_L/paula_eye_ball_L/paula_eye_iris_L_12
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_L/paula_eye_lid_lower_L
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_L/paula_eye_lid_upper_L
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_R
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_R/paula_eye_ball_R
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_R/paula_eye_ball_R/paula_eye_iris_R
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_R/paula_eye_ball_R/paula_eye_iris_R_2
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_R/paula_eye_ball_R/paula_eye_iris_R_3
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_R/paula_eye_ball_R/paula_eye_iris_R_4
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_R/paula_eye_ball_R/paula_eye_iris_R_5
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_R/paula_eye_ball_R/paula_eye_iris_R_6
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_R/paula_eye_ball_R/paula_eye_iris_R_7
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_R/paula_eye_ball_R/paula_eye_iris_R_8
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_R/paula_eye_ball_R/paula_eye_iris_R_9
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_R/paula_eye_ball_R/paula_eye_iris_R_10
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_R/paula_eye_ball_R/paula_eye_iris_R_11
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_R/paula_eye_ball_R/paula_eye_iris_R_12
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_R/paula_eye_lid_lower_R
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_R/paula_eye_lid_upper_R
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_speaker
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: 2_blink
+      takeName: 2_blink
+      firstFrame: 0
+      lastFrame: 120
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: paula_root
+        weight: 1
+      - path: paula_root/paula_body
+        weight: 1
+      - path: paula_root/paula_body/paula_thruster
+        weight: 1
+      - path: paula_root/paula_body/paula_thruster/paula_thruster_exhaust
+        weight: 1
+      - path: paula_root/paula_hand_L
+        weight: 1
+      - path: paula_root/paula_hand_L/paula_hand_thumb_L
+        weight: 1
+      - path: paula_root/paula_hand_R
+        weight: 1
+      - path: paula_root/paula_hand_R/paula_hand_thumb_R
+        weight: 1
+      - path: paula_root/paula_neck
+        weight: 1
+      - path: paula_root/paula_neck/paula_head
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/eyebrow_master_L
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/eyebrow_master_L/eyebrow_L
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/eyebrow_master_L/eyebrow_L/eyebrow_L_2
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/eyebrow_master_L/eyebrow_L_3
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/eyebrow_master_L/eyebrow_L_3/eyebrow_L_4
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/eyebrow_master_R
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/eyebrow_master_R/eyebrow_R
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/eyebrow_master_R/eyebrow_R/eyebrow_R_2
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/eyebrow_master_R/eyebrow_R_3
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/eyebrow_master_R/eyebrow_R_3/eyebrow_R_4
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_L
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_L/paula_eye_ball_L
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_L/paula_eye_ball_L/paula_eye_iris_L
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_L/paula_eye_ball_L/paula_eye_iris_L_2
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_L/paula_eye_ball_L/paula_eye_iris_L_3
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_L/paula_eye_ball_L/paula_eye_iris_L_4
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_L/paula_eye_ball_L/paula_eye_iris_L_5
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_L/paula_eye_ball_L/paula_eye_iris_L_6
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_L/paula_eye_ball_L/paula_eye_iris_L_7
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_L/paula_eye_ball_L/paula_eye_iris_L_8
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_L/paula_eye_ball_L/paula_eye_iris_L_9
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_L/paula_eye_ball_L/paula_eye_iris_L_10
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_L/paula_eye_ball_L/paula_eye_iris_L_11
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_L/paula_eye_ball_L/paula_eye_iris_L_12
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_L/paula_eye_lid_lower_L
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_L/paula_eye_lid_upper_L
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_R
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_R/paula_eye_ball_R
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_R/paula_eye_ball_R/paula_eye_iris_R
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_R/paula_eye_ball_R/paula_eye_iris_R_2
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_R/paula_eye_ball_R/paula_eye_iris_R_3
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_R/paula_eye_ball_R/paula_eye_iris_R_4
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_R/paula_eye_ball_R/paula_eye_iris_R_5
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_R/paula_eye_ball_R/paula_eye_iris_R_6
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_R/paula_eye_ball_R/paula_eye_iris_R_7
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_R/paula_eye_ball_R/paula_eye_iris_R_8
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_R/paula_eye_ball_R/paula_eye_iris_R_9
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_R/paula_eye_ball_R/paula_eye_iris_R_10
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_R/paula_eye_ball_R/paula_eye_iris_R_11
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_R/paula_eye_ball_R/paula_eye_iris_R_12
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_R/paula_eye_lid_lower_R
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_R/paula_eye_lid_upper_R
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_speaker
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: 2_thrust
+      takeName: 2_thrust
+      firstFrame: 0
+      lastFrame: 2
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: paula_root
+        weight: 1
+      - path: paula_root/paula_body
+        weight: 1
+      - path: paula_root/paula_body/paula_thruster
+        weight: 1
+      - path: paula_root/paula_body/paula_thruster/paula_thruster_exhaust
+        weight: 1
+      - path: paula_root/paula_hand_L
+        weight: 1
+      - path: paula_root/paula_hand_L/paula_hand_thumb_L
+        weight: 1
+      - path: paula_root/paula_hand_R
+        weight: 1
+      - path: paula_root/paula_hand_R/paula_hand_thumb_R
+        weight: 1
+      - path: paula_root/paula_neck
+        weight: 1
+      - path: paula_root/paula_neck/paula_head
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/eyebrow_master_L
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/eyebrow_master_L/eyebrow_L
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/eyebrow_master_L/eyebrow_L/eyebrow_L_2
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/eyebrow_master_L/eyebrow_L_3
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/eyebrow_master_L/eyebrow_L_3/eyebrow_L_4
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/eyebrow_master_R
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/eyebrow_master_R/eyebrow_R
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/eyebrow_master_R/eyebrow_R/eyebrow_R_2
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/eyebrow_master_R/eyebrow_R_3
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/eyebrow_master_R/eyebrow_R_3/eyebrow_R_4
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_L
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_L/paula_eye_ball_L
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_L/paula_eye_ball_L/paula_eye_iris_L
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_L/paula_eye_ball_L/paula_eye_iris_L_2
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_L/paula_eye_ball_L/paula_eye_iris_L_3
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_L/paula_eye_ball_L/paula_eye_iris_L_4
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_L/paula_eye_ball_L/paula_eye_iris_L_5
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_L/paula_eye_ball_L/paula_eye_iris_L_6
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_L/paula_eye_ball_L/paula_eye_iris_L_7
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_L/paula_eye_ball_L/paula_eye_iris_L_8
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_L/paula_eye_ball_L/paula_eye_iris_L_9
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_L/paula_eye_ball_L/paula_eye_iris_L_10
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_L/paula_eye_ball_L/paula_eye_iris_L_11
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_L/paula_eye_ball_L/paula_eye_iris_L_12
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_L/paula_eye_lid_lower_L
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_L/paula_eye_lid_upper_L
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_R
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_R/paula_eye_ball_R
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_R/paula_eye_ball_R/paula_eye_iris_R
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_R/paula_eye_ball_R/paula_eye_iris_R_2
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_R/paula_eye_ball_R/paula_eye_iris_R_3
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_R/paula_eye_ball_R/paula_eye_iris_R_4
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_R/paula_eye_ball_R/paula_eye_iris_R_5
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_R/paula_eye_ball_R/paula_eye_iris_R_6
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_R/paula_eye_ball_R/paula_eye_iris_R_7
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_R/paula_eye_ball_R/paula_eye_iris_R_8
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_R/paula_eye_ball_R/paula_eye_iris_R_9
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_R/paula_eye_ball_R/paula_eye_iris_R_10
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_R/paula_eye_ball_R/paula_eye_iris_R_11
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_R/paula_eye_ball_R/paula_eye_iris_R_12
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_R/paula_eye_lid_lower_R
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_R/paula_eye_lid_upper_R
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_speaker
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: 1_followme
+      takeName: 1_followme
+      firstFrame: 0
+      lastFrame: 24
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: paula_root
+        weight: 1
+      - path: paula_root/paula_body
+        weight: 1
+      - path: paula_root/paula_body/paula_thruster
+        weight: 1
+      - path: paula_root/paula_body/paula_thruster/paula_thruster_exhaust
+        weight: 1
+      - path: paula_root/paula_hand_L
+        weight: 1
+      - path: paula_root/paula_hand_L/paula_hand_thumb_L
+        weight: 1
+      - path: paula_root/paula_hand_R
+        weight: 1
+      - path: paula_root/paula_hand_R/paula_hand_thumb_R
+        weight: 1
+      - path: paula_root/paula_neck
+        weight: 1
+      - path: paula_root/paula_neck/paula_head
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/eyebrow_master_L
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/eyebrow_master_L/eyebrow_L
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/eyebrow_master_L/eyebrow_L/eyebrow_L_2
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/eyebrow_master_L/eyebrow_L_3
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/eyebrow_master_L/eyebrow_L_3/eyebrow_L_4
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/eyebrow_master_R
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/eyebrow_master_R/eyebrow_R
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/eyebrow_master_R/eyebrow_R/eyebrow_R_2
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/eyebrow_master_R/eyebrow_R_3
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/eyebrow_master_R/eyebrow_R_3/eyebrow_R_4
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_L
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_L/paula_eye_ball_L
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_L/paula_eye_ball_L/paula_eye_iris_L
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_L/paula_eye_ball_L/paula_eye_iris_L_2
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_L/paula_eye_ball_L/paula_eye_iris_L_3
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_L/paula_eye_ball_L/paula_eye_iris_L_4
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_L/paula_eye_ball_L/paula_eye_iris_L_5
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_L/paula_eye_ball_L/paula_eye_iris_L_6
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_L/paula_eye_ball_L/paula_eye_iris_L_7
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_L/paula_eye_ball_L/paula_eye_iris_L_8
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_L/paula_eye_ball_L/paula_eye_iris_L_9
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_L/paula_eye_ball_L/paula_eye_iris_L_10
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_L/paula_eye_ball_L/paula_eye_iris_L_11
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_L/paula_eye_ball_L/paula_eye_iris_L_12
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_L/paula_eye_lid_lower_L
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_L/paula_eye_lid_upper_L
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_R
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_R/paula_eye_ball_R
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_R/paula_eye_ball_R/paula_eye_iris_R
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_R/paula_eye_ball_R/paula_eye_iris_R_2
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_R/paula_eye_ball_R/paula_eye_iris_R_3
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_R/paula_eye_ball_R/paula_eye_iris_R_4
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_R/paula_eye_ball_R/paula_eye_iris_R_5
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_R/paula_eye_ball_R/paula_eye_iris_R_6
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_R/paula_eye_ball_R/paula_eye_iris_R_7
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_R/paula_eye_ball_R/paula_eye_iris_R_8
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_R/paula_eye_ball_R/paula_eye_iris_R_9
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_R/paula_eye_ball_R/paula_eye_iris_R_10
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_R/paula_eye_ball_R/paula_eye_iris_R_11
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_R/paula_eye_ball_R/paula_eye_iris_R_12
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_R/paula_eye_lid_lower_R
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_R/paula_eye_lid_upper_R
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_speaker
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: 1_talk
+      takeName: 1_talk
+      firstFrame: 0
+      lastFrame: 24
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: paula_root
+        weight: 1
+      - path: paula_root/paula_body
+        weight: 1
+      - path: paula_root/paula_body/paula_thruster
+        weight: 1
+      - path: paula_root/paula_body/paula_thruster/paula_thruster_exhaust
+        weight: 1
+      - path: paula_root/paula_hand_L
+        weight: 1
+      - path: paula_root/paula_hand_L/paula_hand_thumb_L
+        weight: 1
+      - path: paula_root/paula_hand_R
+        weight: 1
+      - path: paula_root/paula_hand_R/paula_hand_thumb_R
+        weight: 1
+      - path: paula_root/paula_neck
+        weight: 1
+      - path: paula_root/paula_neck/paula_head
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/eyebrow_master_L
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/eyebrow_master_L/eyebrow_L
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/eyebrow_master_L/eyebrow_L/eyebrow_L_2
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/eyebrow_master_L/eyebrow_L_3
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/eyebrow_master_L/eyebrow_L_3/eyebrow_L_4
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/eyebrow_master_R
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/eyebrow_master_R/eyebrow_R
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/eyebrow_master_R/eyebrow_R/eyebrow_R_2
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/eyebrow_master_R/eyebrow_R_3
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/eyebrow_master_R/eyebrow_R_3/eyebrow_R_4
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_L
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_L/paula_eye_ball_L
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_L/paula_eye_ball_L/paula_eye_iris_L
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_L/paula_eye_ball_L/paula_eye_iris_L_2
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_L/paula_eye_ball_L/paula_eye_iris_L_3
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_L/paula_eye_ball_L/paula_eye_iris_L_4
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_L/paula_eye_ball_L/paula_eye_iris_L_5
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_L/paula_eye_ball_L/paula_eye_iris_L_6
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_L/paula_eye_ball_L/paula_eye_iris_L_7
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_L/paula_eye_ball_L/paula_eye_iris_L_8
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_L/paula_eye_ball_L/paula_eye_iris_L_9
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_L/paula_eye_ball_L/paula_eye_iris_L_10
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_L/paula_eye_ball_L/paula_eye_iris_L_11
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_L/paula_eye_ball_L/paula_eye_iris_L_12
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_L/paula_eye_lid_lower_L
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_L/paula_eye_lid_upper_L
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_R
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_R/paula_eye_ball_R
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_R/paula_eye_ball_R/paula_eye_iris_R
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_R/paula_eye_ball_R/paula_eye_iris_R_2
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_R/paula_eye_ball_R/paula_eye_iris_R_3
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_R/paula_eye_ball_R/paula_eye_iris_R_4
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_R/paula_eye_ball_R/paula_eye_iris_R_5
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_R/paula_eye_ball_R/paula_eye_iris_R_6
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_R/paula_eye_ball_R/paula_eye_iris_R_7
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_R/paula_eye_ball_R/paula_eye_iris_R_8
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_R/paula_eye_ball_R/paula_eye_iris_R_9
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_R/paula_eye_ball_R/paula_eye_iris_R_10
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_R/paula_eye_ball_R/paula_eye_iris_R_11
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_R/paula_eye_ball_R/paula_eye_iris_R_12
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_R/paula_eye_lid_lower_R
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_R/paula_eye_lid_upper_R
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_speaker
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: 1_welcome
+      takeName: 1_welcome
+      firstFrame: 0
+      lastFrame: 24
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: paula_root
+        weight: 1
+      - path: paula_root/paula_body
+        weight: 1
+      - path: paula_root/paula_body/paula_thruster
+        weight: 1
+      - path: paula_root/paula_body/paula_thruster/paula_thruster_exhaust
+        weight: 1
+      - path: paula_root/paula_hand_L
+        weight: 1
+      - path: paula_root/paula_hand_L/paula_hand_thumb_L
+        weight: 1
+      - path: paula_root/paula_hand_R
+        weight: 1
+      - path: paula_root/paula_hand_R/paula_hand_thumb_R
+        weight: 1
+      - path: paula_root/paula_neck
+        weight: 1
+      - path: paula_root/paula_neck/paula_head
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/eyebrow_master_L
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/eyebrow_master_L/eyebrow_L
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/eyebrow_master_L/eyebrow_L/eyebrow_L_2
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/eyebrow_master_L/eyebrow_L_3
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/eyebrow_master_L/eyebrow_L_3/eyebrow_L_4
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/eyebrow_master_R
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/eyebrow_master_R/eyebrow_R
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/eyebrow_master_R/eyebrow_R/eyebrow_R_2
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/eyebrow_master_R/eyebrow_R_3
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/eyebrow_master_R/eyebrow_R_3/eyebrow_R_4
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_L
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_L/paula_eye_ball_L
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_L/paula_eye_ball_L/paula_eye_iris_L
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_L/paula_eye_ball_L/paula_eye_iris_L_2
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_L/paula_eye_ball_L/paula_eye_iris_L_3
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_L/paula_eye_ball_L/paula_eye_iris_L_4
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_L/paula_eye_ball_L/paula_eye_iris_L_5
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_L/paula_eye_ball_L/paula_eye_iris_L_6
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_L/paula_eye_ball_L/paula_eye_iris_L_7
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_L/paula_eye_ball_L/paula_eye_iris_L_8
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_L/paula_eye_ball_L/paula_eye_iris_L_9
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_L/paula_eye_ball_L/paula_eye_iris_L_10
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_L/paula_eye_ball_L/paula_eye_iris_L_11
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_L/paula_eye_ball_L/paula_eye_iris_L_12
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_L/paula_eye_lid_lower_L
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_L/paula_eye_lid_upper_L
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_R
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_R/paula_eye_ball_R
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_R/paula_eye_ball_R/paula_eye_iris_R
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_R/paula_eye_ball_R/paula_eye_iris_R_2
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_R/paula_eye_ball_R/paula_eye_iris_R_3
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_R/paula_eye_ball_R/paula_eye_iris_R_4
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_R/paula_eye_ball_R/paula_eye_iris_R_5
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_R/paula_eye_ball_R/paula_eye_iris_R_6
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_R/paula_eye_ball_R/paula_eye_iris_R_7
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_R/paula_eye_ball_R/paula_eye_iris_R_8
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_R/paula_eye_ball_R/paula_eye_iris_R_9
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_R/paula_eye_ball_R/paula_eye_iris_R_10
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_R/paula_eye_ball_R/paula_eye_iris_R_11
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_R/paula_eye_ball_R/paula_eye_iris_R_12
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_R/paula_eye_lid_lower_R
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_eye_master_R/paula_eye_lid_upper_R
+        weight: 1
+      - path: paula_root/paula_neck/paula_head/paula_speaker
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,79 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1404601792621648}
+  m_IsPrefabParent: 1
+--- !u!1 &1404601792621648
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4802257725044094}
+  - component: {fileID: 114411539410236740}
+  m_Layer: 0
+  m_Name: PointOfInterestManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4802257725044094
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1404601792621648}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114411539410236740
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1404601792621648}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c2dbf2e06f8fd04f84ab02de96f2256, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pointsOfInterest:
+  - Id: Product1
+    AnchorPrefab: {fileID: 1469468113936640, guid: fcbc54266782496428a6deebc31c5cb8,
+      type: 2}
+    GizmoPrefab: {fileID: 1156272573442886, guid: 92922dd359498a84e8cec0a2c0243cd6,
+      type: 2}
+  - Id: Product2
+    AnchorPrefab: {fileID: 1444056465382012, guid: 5c65cfc23ec39184daf993db848ed79a,
+      type: 2}
+    GizmoPrefab: {fileID: 1156272573442886, guid: c125a77a7f108dd44bab031195de6ae9,
+      type: 2}
+  - Id: Product3
+    AnchorPrefab: {fileID: 1764675877518774, guid: 226436590c541c540be448825eb9a4cd,
+      type: 2}
+    GizmoPrefab: {fileID: 1156272573442886, guid: bb09548f68fd4f944a9439e2cf7da1d1,
+      type: 2}
+  - Id: Entertainment1
+    AnchorPrefab: {fileID: 1358474183263254, guid: 7e5e81eaba4e21e4086978654973bfac,
+      type: 2}
+    GizmoPrefab: {fileID: 1690963434553606, guid: 336f6e35a8c543048af0d90b987bbd1c,
+      type: 2}
+  - Id: Entertainment2
+    AnchorPrefab: {fileID: 1805907362901382, guid: df6e1b0dabf47fd4e88f67b4da5067dc,
+      type: 2}
+    GizmoPrefab: {fileID: 1690963434553606, guid: 336f6e35a8c543048af0d90b987bbd1c,
+      type: 2}
