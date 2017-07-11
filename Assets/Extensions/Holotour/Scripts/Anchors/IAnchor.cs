@@ -4,23 +4,17 @@ using UnityEngine.VR.WSA;
 public interface IAnchor 
 {
 
-    bool IsActive
-    { get; set; }
+    string Region { get; }
 
-    bool IsVisible
-    { get; }
+    bool IsVisible { get; set; }
 
-    Vector3 AvatarTargetPosition
-    { get; }
+    Vector3 AvatarTargetPosition { get; }
 
-    Vector3 AnchorPosition
-    { get;  set; }
+    Vector3 AnchorPosition { get;  set; }
 
-    Quaternion AnchorRotation
-    { get; set; }
+    Quaternion AnchorRotation { get; set; }
 
-    GameObject GameObject
-    { get; }
+    GameObject GameObject { get; }
 
 }
 

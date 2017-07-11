@@ -10,7 +10,7 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>87a8f5dd-e11f-4906-8c86-225eab029472</PackageIdentityName>
     <PackageIdentityPublisher>CN=DefaultCompany</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\BNJMO\Personal Training\HoloRPG\HoloRPG-Unity\App\HoloRPG\obj\x86\Release\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\BNJMO\Personal Training\HoloRPG\holorpg\App\HoloRPG\obj\x86\Release\</IntermediateOutputPath>
     <RemoteDeploymentType>
     </RemoteDeploymentType>
     <PackageRegistrationPath>
@@ -25,16 +25,16 @@
     <JitOptimizationSuppressed>False</JitOptimizationSuppressed>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\BNJMO\Personal Training\HoloRPG\HoloRPG-Unity\App\HoloRPG\bin\x86\Release\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\BNJMO\Personal Training\HoloRPG\holorpg\App\HoloRPG\bin\x86\Release\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-06-13T18:05:58.566</Modified>
+      <Modified>2017-06-14T08:35:26.055</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\BNJMO\Personal Training\HoloRPG\HoloRPG-Unity\App\HoloRPG\bin\x86\Release\HoloRPG.exe">
+    <AppxPackagedFile Include="C:\BNJMO\Personal Training\HoloRPG\holorpg\App\HoloRPG\bin\x86\Release\HoloRPG.exe">
       <PackagePath>entrypoint\HoloRPG.exe</PackagePath>
-      <Modified>2017-06-13T18:05:39.055</Modified>
+      <Modified>2017-06-14T08:35:12.641</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dj_BN\.nuget\packages\Microsoft.ApplicationInsights\1.0.0\lib\portable-win81+wpa81\Microsoft.ApplicationInsights.dll">
       <PackagePath>Microsoft.ApplicationInsights.dll</PackagePath>
@@ -460,7 +460,7 @@
       <PackagePath>System.Xml.XmlSerializer.dll</PackagePath>
       <Modified>2015-07-22T21:11:12.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\BNJMO\Personal Training\HoloRPG\HoloRPG-Unity\App\HoloRPG\Unprocessed\Boo.Lang.dll">
+    <AppxPackagedFile Include="C:\BNJMO\Personal Training\HoloRPG\holorpg\App\HoloRPG\Unprocessed\Boo.Lang.dll">
       <PackagePath>Boo.Lang.dll</PackagePath>
       <Modified>2017-03-30T08:29:36.000</Modified>
     </AppxPackagedFile>
@@ -468,7 +468,7 @@
       <PackagePath>UnityEngineProxy.dll</PackagePath>
       <Modified>2017-03-30T08:22:40.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\BNJMO\Personal Training\HoloRPG\HoloRPG-Unity\App\HoloRPG\Unprocessed\WinRTLegacy.dll">
+    <AppxPackagedFile Include="C:\BNJMO\Personal Training\HoloRPG\holorpg\App\HoloRPG\Unprocessed\WinRTLegacy.dll">
       <PackagePath>WinRTLegacy.dll</PackagePath>
       <Modified>2017-03-30T06:51:20.000</Modified>
     </AppxPackagedFile>
@@ -500,196 +500,196 @@
       <PackagePath>WinRTBridge.winmd</PackagePath>
       <Modified>2017-03-30T08:22:36.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\BNJMO\Personal Training\HoloRPG\HoloRPG-Unity\App\HoloRPG\Resource.res">
+    <AppxPackagedFile Include="C:\BNJMO\Personal Training\HoloRPG\holorpg\App\HoloRPG\Resource.res">
       <PackagePath>Resource.res</PackagePath>
-      <Modified>2017-06-13T18:04:32.846</Modified>
+      <Modified>2017-06-14T08:34:13.658</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\BNJMO\Personal Training\HoloRPG\HoloRPG-Unity\App\HoloRPG\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\BNJMO\Personal Training\HoloRPG\holorpg\App\HoloRPG\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2017-03-22T12:41:00.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\BNJMO\Personal Training\HoloRPG\HoloRPG-Unity\App\HoloRPG\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\BNJMO\Personal Training\HoloRPG\holorpg\App\HoloRPG\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2017-03-30T05:59:30.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\BNJMO\Personal Training\HoloRPG\HoloRPG-Unity\App\HoloRPG\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\BNJMO\Personal Training\HoloRPG\holorpg\App\HoloRPG\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2017-03-30T05:54:40.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\BNJMO\Personal Training\HoloRPG\HoloRPG-Unity\App\HoloRPG\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="C:\BNJMO\Personal Training\HoloRPG\holorpg\App\HoloRPG\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2017-03-30T05:59:22.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\BNJMO\Personal Training\HoloRPG\HoloRPG-Unity\App\HoloRPG\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="C:\BNJMO\Personal Training\HoloRPG\holorpg\App\HoloRPG\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2017-03-30T05:59:22.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\BNJMO\Personal Training\HoloRPG\HoloRPG-Unity\App\HoloRPG\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\BNJMO\Personal Training\HoloRPG\holorpg\App\HoloRPG\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2017-03-30T05:55:36.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\BNJMO\Personal Training\HoloRPG\HoloRPG-Unity\App\HoloRPG\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="C:\BNJMO\Personal Training\HoloRPG\holorpg\App\HoloRPG\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
       <Modified>2017-03-09T23:27:00.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\BNJMO\Personal Training\HoloRPG\HoloRPG-Unity\App\HoloRPG\MicStreamSelector.dll">
+    <AppxPackagedFile Include="C:\BNJMO\Personal Training\HoloRPG\holorpg\App\HoloRPG\MicStreamSelector.dll">
       <PackagePath>MicStreamSelector.dll</PackagePath>
       <Modified>2017-05-12T11:33:16.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\BNJMO\Personal Training\HoloRPG\HoloRPG-Unity\App\HoloRPG\SharingClient.dll">
+    <AppxPackagedFile Include="C:\BNJMO\Personal Training\HoloRPG\holorpg\App\HoloRPG\SharingClient.dll">
       <PackagePath>SharingClient.dll</PackagePath>
       <Modified>2017-05-12T11:33:16.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\BNJMO\Personal Training\HoloRPG\HoloRPG-Unity\App\HoloRPG\SpatialUnderstanding.dll">
+    <AppxPackagedFile Include="C:\BNJMO\Personal Training\HoloRPG\holorpg\App\HoloRPG\SpatialUnderstanding.dll">
       <PackagePath>SpatialUnderstanding.dll</PackagePath>
       <Modified>2017-05-12T11:33:16.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\BNJMO\Personal Training\HoloRPG\HoloRPG-Unity\App\HoloRPG\PlaneFinding.dll">
+    <AppxPackagedFile Include="C:\BNJMO\Personal Training\HoloRPG\holorpg\App\HoloRPG\PlaneFinding.dll">
       <PackagePath>PlaneFinding.dll</PackagePath>
       <Modified>2017-05-12T11:33:16.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\BNJMO\Personal Training\HoloRPG\HoloRPG-Unity\App\HoloRPG\Data\globalgamemanagers">
+    <AppxPackagedFile Include="C:\BNJMO\Personal Training\HoloRPG\holorpg\App\HoloRPG\Data\globalgamemanagers">
       <PackagePath>Data\globalgamemanagers</PackagePath>
-      <Modified>2017-06-13T18:03:54.966</Modified>
+      <Modified>2017-06-14T08:33:34.479</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\BNJMO\Personal Training\HoloRPG\HoloRPG-Unity\App\HoloRPG\Data\level0">
+    <AppxPackagedFile Include="C:\BNJMO\Personal Training\HoloRPG\holorpg\App\HoloRPG\Data\level0">
       <PackagePath>Data\level0</PackagePath>
-      <Modified>2017-06-13T18:03:51.434</Modified>
+      <Modified>2017-06-14T08:33:30.443</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\BNJMO\Personal Training\HoloRPG\HoloRPG-Unity\App\HoloRPG\Data\level1">
+    <AppxPackagedFile Include="C:\BNJMO\Personal Training\HoloRPG\holorpg\App\HoloRPG\Data\level1">
       <PackagePath>Data\level1</PackagePath>
-      <Modified>2017-06-13T18:03:53.690</Modified>
+      <Modified>2017-06-14T08:33:33.016</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\BNJMO\Personal Training\HoloRPG\HoloRPG-Unity\App\HoloRPG\Data\PlayerConnectionConfigFile">
+    <AppxPackagedFile Include="C:\BNJMO\Personal Training\HoloRPG\holorpg\App\HoloRPG\Data\PlayerConnectionConfigFile">
       <PackagePath>Data\PlayerConnectionConfigFile</PackagePath>
-      <Modified>2017-06-13T18:04:01.113</Modified>
+      <Modified>2017-06-14T08:33:42.895</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\BNJMO\Personal Training\HoloRPG\HoloRPG-Unity\App\HoloRPG\Data\Resources\unity default resources">
+    <AppxPackagedFile Include="C:\BNJMO\Personal Training\HoloRPG\holorpg\App\HoloRPG\Data\Resources\unity default resources">
       <PackagePath>Data\Resources\unity default resources</PackagePath>
       <Modified>2017-03-30T06:01:54.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\BNJMO\Personal Training\HoloRPG\HoloRPG-Unity\App\HoloRPG\Data\Resources\unity_builtin_extra">
+    <AppxPackagedFile Include="C:\BNJMO\Personal Training\HoloRPG\holorpg\App\HoloRPG\Data\Resources\unity_builtin_extra">
       <PackagePath>Data\Resources\unity_builtin_extra</PackagePath>
-      <Modified>2017-06-13T18:04:01.110</Modified>
+      <Modified>2017-06-14T08:33:42.892</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\BNJMO\Personal Training\HoloRPG\HoloRPG-Unity\App\HoloRPG\Data\globalgamemanagers.assets">
+    <AppxPackagedFile Include="C:\BNJMO\Personal Training\HoloRPG\holorpg\App\HoloRPG\Data\globalgamemanagers.assets">
       <PackagePath>Data\globalgamemanagers.assets</PackagePath>
-      <Modified>2017-06-13T18:03:55.173</Modified>
+      <Modified>2017-06-14T08:33:34.702</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\BNJMO\Personal Training\HoloRPG\HoloRPG-Unity\App\HoloRPG\Data\resources.assets">
+    <AppxPackagedFile Include="C:\BNJMO\Personal Training\HoloRPG\holorpg\App\HoloRPG\Data\resources.assets">
       <PackagePath>Data\resources.assets</PackagePath>
-      <Modified>2017-06-13T18:03:57.827</Modified>
+      <Modified>2017-06-14T08:33:38.184</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\BNJMO\Personal Training\HoloRPG\HoloRPG-Unity\App\HoloRPG\Data\sharedassets0.assets">
+    <AppxPackagedFile Include="C:\BNJMO\Personal Training\HoloRPG\holorpg\App\HoloRPG\Data\sharedassets0.assets">
       <PackagePath>Data\sharedassets0.assets</PackagePath>
-      <Modified>2017-06-13T18:04:00.330</Modified>
+      <Modified>2017-06-14T08:33:41.602</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\BNJMO\Personal Training\HoloRPG\HoloRPG-Unity\App\HoloRPG\Data\sharedassets1.assets">
+    <AppxPackagedFile Include="C:\BNJMO\Personal Training\HoloRPG\holorpg\App\HoloRPG\Data\sharedassets1.assets">
       <PackagePath>Data\sharedassets1.assets</PackagePath>
-      <Modified>2017-06-13T18:04:00.555</Modified>
+      <Modified>2017-06-14T08:33:41.951</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\BNJMO\Personal Training\HoloRPG\HoloRPG-Unity\App\HoloRPG\Data\level0.resS">
+    <AppxPackagedFile Include="C:\BNJMO\Personal Training\HoloRPG\holorpg\App\HoloRPG\Data\level0.resS">
       <PackagePath>Data\level0.resS</PackagePath>
-      <Modified>2017-06-13T18:03:51.430</Modified>
+      <Modified>2017-06-14T08:33:30.439</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\BNJMO\Personal Training\HoloRPG\HoloRPG-Unity\App\HoloRPG\Data\level1.resS">
+    <AppxPackagedFile Include="C:\BNJMO\Personal Training\HoloRPG\holorpg\App\HoloRPG\Data\level1.resS">
       <PackagePath>Data\level1.resS</PackagePath>
-      <Modified>2017-06-13T18:03:53.688</Modified>
+      <Modified>2017-06-14T08:33:33.014</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\BNJMO\Personal Training\HoloRPG\HoloRPG-Unity\App\HoloRPG\Data\resources.assets.resS">
+    <AppxPackagedFile Include="C:\BNJMO\Personal Training\HoloRPG\holorpg\App\HoloRPG\Data\resources.assets.resS">
       <PackagePath>Data\resources.assets.resS</PackagePath>
-      <Modified>2017-06-13T18:03:57.825</Modified>
+      <Modified>2017-06-14T08:33:38.178</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\BNJMO\Personal Training\HoloRPG\HoloRPG-Unity\App\HoloRPG\Data\sharedassets0.assets.resS">
+    <AppxPackagedFile Include="C:\BNJMO\Personal Training\HoloRPG\holorpg\App\HoloRPG\Data\sharedassets0.assets.resS">
       <PackagePath>Data\sharedassets0.assets.resS</PackagePath>
-      <Modified>2017-06-13T18:04:00.326</Modified>
+      <Modified>2017-06-14T08:33:41.600</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\BNJMO\Personal Training\HoloRPG\HoloRPG-Unity\App\HoloRPG\Data\sharedassets1.assets.resS">
+    <AppxPackagedFile Include="C:\BNJMO\Personal Training\HoloRPG\holorpg\App\HoloRPG\Data\sharedassets1.assets.resS">
       <PackagePath>Data\sharedassets1.assets.resS</PackagePath>
-      <Modified>2017-06-13T18:04:00.555</Modified>
+      <Modified>2017-06-14T08:33:41.951</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\BNJMO\Personal Training\HoloRPG\HoloRPG-Unity\App\HoloRPG\Data\managedAssemblies.txt">
+    <AppxPackagedFile Include="C:\BNJMO\Personal Training\HoloRPG\holorpg\App\HoloRPG\Data\managedAssemblies.txt">
       <PackagePath>Data\managedAssemblies.txt</PackagePath>
-      <Modified>2017-06-13T18:04:32.760</Modified>
+      <Modified>2017-06-14T08:34:13.564</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\BNJMO\Personal Training\HoloRPG\HoloRPG-Unity\App\HoloRPG\Data\nativePlugins.txt">
+    <AppxPackagedFile Include="C:\BNJMO\Personal Training\HoloRPG\holorpg\App\HoloRPG\Data\nativePlugins.txt">
       <PackagePath>Data\nativePlugins.txt</PackagePath>
-      <Modified>2017-06-13T18:04:32.763</Modified>
+      <Modified>2017-06-14T08:34:13.566</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\BNJMO\Personal Training\HoloRPG\HoloRPG-Unity\App\HoloRPG\Data\resources.resource">
+    <AppxPackagedFile Include="C:\BNJMO\Personal Training\HoloRPG\holorpg\App\HoloRPG\Data\resources.resource">
       <PackagePath>Data\resources.resource</PackagePath>
-      <Modified>2017-06-13T18:03:57.833</Modified>
+      <Modified>2017-06-14T08:33:38.190</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\BNJMO\Personal Training\HoloRPG\HoloRPG-Unity\App\HoloRPG\Data\sharedassets0.resource">
+    <AppxPackagedFile Include="C:\BNJMO\Personal Training\HoloRPG\holorpg\App\HoloRPG\Data\sharedassets0.resource">
       <PackagePath>Data\sharedassets0.resource</PackagePath>
-      <Modified>2017-06-13T18:04:00.336</Modified>
+      <Modified>2017-06-14T08:33:41.609</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
       <Modified>2017-01-11T14:43:52.798</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\BNJMO\Personal Training\HoloRPG\HoloRPG-Unity\App\HoloRPG\bin\x86\Release\resources.pri">
+    <AppxPackagedFile Include="C:\BNJMO\Personal Training\HoloRPG\holorpg\App\HoloRPG\bin\x86\Release\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-06-13T18:05:39.646</Modified>
+      <Modified>2017-06-14T08:35:14.408</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\BNJMO\Personal Training\HoloRPG\HoloRPG-Unity\App\HoloRPG\Assembly-CSharp.dll">
+    <AppxPackagedFile Include="C:\BNJMO\Personal Training\HoloRPG\holorpg\App\HoloRPG\Assembly-CSharp.dll">
       <PackagePath>Assembly-CSharp.dll</PackagePath>
-      <Modified>2017-06-13T18:05:48.323</Modified>
+      <Modified>2017-06-14T08:35:24.297</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\BNJMO\Personal Training\HoloRPG\HoloRPG-Unity\App\HoloRPG\Assembly-UnityScript.dll">
+    <AppxPackagedFile Include="C:\BNJMO\Personal Training\HoloRPG\holorpg\App\HoloRPG\Assembly-UnityScript.dll">
       <PackagePath>Assembly-UnityScript.dll</PackagePath>
-      <Modified>2017-06-13T18:05:48.352</Modified>
+      <Modified>2017-06-14T08:35:24.345</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\BNJMO\Personal Training\HoloRPG\HoloRPG-Unity\App\HoloRPG\UnityEngine.dll">
+    <AppxPackagedFile Include="C:\BNJMO\Personal Training\HoloRPG\holorpg\App\HoloRPG\UnityEngine.dll">
       <PackagePath>UnityEngine.dll</PackagePath>
-      <Modified>2017-06-13T18:05:49.090</Modified>
+      <Modified>2017-06-14T08:35:25.346</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\BNJMO\Personal Training\HoloRPG\HoloRPG-Unity\App\HoloRPG\Newtonsoft.Json.dll">
+    <AppxPackagedFile Include="C:\BNJMO\Personal Training\HoloRPG\holorpg\App\HoloRPG\Newtonsoft.Json.dll">
       <PackagePath>Newtonsoft.Json.dll</PackagePath>
-      <Modified>2017-06-13T18:05:49.138</Modified>
+      <Modified>2017-06-14T08:35:25.405</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\BNJMO\Personal Training\HoloRPG\HoloRPG-Unity\App\HoloRPG\UnityEngine.Analytics.dll">
+    <AppxPackagedFile Include="C:\BNJMO\Personal Training\HoloRPG\holorpg\App\HoloRPG\UnityEngine.Analytics.dll">
       <PackagePath>UnityEngine.Analytics.dll</PackagePath>
-      <Modified>2017-06-13T18:05:49.142</Modified>
+      <Modified>2017-06-14T08:35:25.412</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\BNJMO\Personal Training\HoloRPG\HoloRPG-Unity\App\HoloRPG\nunit.framework.dll">
+    <AppxPackagedFile Include="C:\BNJMO\Personal Training\HoloRPG\holorpg\App\HoloRPG\nunit.framework.dll">
       <PackagePath>nunit.framework.dll</PackagePath>
-      <Modified>2017-06-13T18:05:49.177</Modified>
+      <Modified>2017-06-14T08:35:25.453</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\BNJMO\Personal Training\HoloRPG\HoloRPG-Unity\App\HoloRPG\UnityEngine.UI.dll">
+    <AppxPackagedFile Include="C:\BNJMO\Personal Training\HoloRPG\holorpg\App\HoloRPG\UnityEngine.UI.dll">
       <PackagePath>UnityEngine.UI.dll</PackagePath>
-      <Modified>2017-06-13T18:05:49.259</Modified>
+      <Modified>2017-06-14T08:35:25.546</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\BNJMO\Personal Training\HoloRPG\HoloRPG-Unity\App\HoloRPG\GETween.dll">
+    <AppxPackagedFile Include="C:\BNJMO\Personal Training\HoloRPG\holorpg\App\HoloRPG\GETween.dll">
       <PackagePath>GETween.dll</PackagePath>
-      <Modified>2017-06-13T18:05:49.262</Modified>
+      <Modified>2017-06-14T08:35:25.550</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\BNJMO\Personal Training\HoloRPG\HoloRPG-Unity\App\HoloRPG\UnityEngine.HoloLens.dll">
+    <AppxPackagedFile Include="C:\BNJMO\Personal Training\HoloRPG\holorpg\App\HoloRPG\UnityEngine.HoloLens.dll">
       <PackagePath>UnityEngine.HoloLens.dll</PackagePath>
-      <Modified>2017-06-13T18:05:49.273</Modified>
+      <Modified>2017-06-14T08:35:25.565</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\BNJMO\Personal Training\HoloRPG\HoloRPG-Unity\App\HoloRPG\UnityEngine.Networking.dll">
+    <AppxPackagedFile Include="C:\BNJMO\Personal Training\HoloRPG\holorpg\App\HoloRPG\UnityEngine.Networking.dll">
       <PackagePath>UnityEngine.Networking.dll</PackagePath>
-      <Modified>2017-06-13T18:05:49.332</Modified>
+      <Modified>2017-06-14T08:35:25.624</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\BNJMO\Personal Training\HoloRPG\HoloRPG-Unity\App\HoloRPG\UnityEngine.VR.dll">
+    <AppxPackagedFile Include="C:\BNJMO\Personal Training\HoloRPG\holorpg\App\HoloRPG\UnityEngine.VR.dll">
       <PackagePath>UnityEngine.VR.dll</PackagePath>
-      <Modified>2017-06-13T18:05:49.336</Modified>
+      <Modified>2017-06-14T08:35:25.627</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\BNJMO\Personal Training\HoloRPG\HoloRPG-Unity\App\HoloRPG\GUIAnimatorFREE.dll">
+    <AppxPackagedFile Include="C:\BNJMO\Personal Training\HoloRPG\holorpg\App\HoloRPG\GUIAnimatorFREE.dll">
       <PackagePath>GUIAnimatorFREE.dll</PackagePath>
-      <Modified>2017-06-13T18:05:49.345</Modified>
+      <Modified>2017-06-14T08:35:25.640</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\BNJMO\Personal Training\HoloRPG\HoloRPG-Unity\App\HoloRPG\bin\x86\Release\Core\HoloRPG.exe">
+    <AppxPackagedFile Include="C:\BNJMO\Personal Training\HoloRPG\holorpg\App\HoloRPG\bin\x86\Release\Core\HoloRPG.exe">
       <PackagePath>HoloRPG.exe</PackagePath>
-      <Modified>2017-06-13T18:05:58.557</Modified>
+      <Modified>2017-06-14T08:35:26.044</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

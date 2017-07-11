@@ -1,0 +1,79 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1175844826421048}
+  m_IsPrefabParent: 1
+--- !u!1 &1175844826421048
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4399592571163398}
+  - component: {fileID: 114349010268144368}
+  m_Layer: 0
+  m_Name: RegionManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4399592571163398
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1175844826421048}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 14.01, y: 0.1610859, z: -4.66}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114349010268144368
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1175844826421048}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e15af5650f7cc8f4c9e5ac1443ad88bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  regionDecorations:
+  - regionName: Matmata
+    smallDecorationItems:
+    - {fileID: 100000, guid: dd5fb3e5201c92940a208b16c692f5d3, type: 2}
+    - {fileID: 100000, guid: 5ce541c2ab0e4d94a938babb50da8e5f, type: 2}
+    - {fileID: 100000, guid: f000f6f31dbebd442a4c86d1239af08e, type: 2}
+    - {fileID: 100000, guid: 33044ecdfe2465346b578b1a13845afa, type: 2}
+    - {fileID: 100000, guid: 11bc579895cdbb64095f192704ac488e, type: 2}
+    - {fileID: 100000, guid: a1e78bea46d1752458abcc1278d3e12d, type: 2}
+    - {fileID: 100000, guid: 4530a02c78a43a448a0394aadc7855c3, type: 2}
+    - {fileID: 100000, guid: 189be33081de3d443bd95a04ab7d6b8d, type: 2}
+    - {fileID: 100000, guid: ca5e315cb3c390a43b7f9214569602a4, type: 2}
+    mediumDecorationItems:
+    - {fileID: 100010, guid: bfe1bd6541bcdf64ca856322f70bb227, type: 2}
+    - {fileID: 100006, guid: 93d773fac0ff2434ea5dac386740001a, type: 2}
+    - {fileID: 100008, guid: a9802c3f55ebc1e43a84b4b94b733566, type: 2}
+    - {fileID: 100000, guid: 2b1a6db15b44c1c47a00f8128adc31f1, type: 2}
+    largeDecorationItems:
+    - {fileID: 100000, guid: c30793592517e624b9c3ab50bd7eb02f, type: 2}
+    - {fileID: 100000, guid: 9e30d7566ca933240aa1ba1419197ab1, type: 2}
+    - {fileID: 100000, guid: fbb92caabcc80344281901c76684c461, type: 2}
+    - {fileID: 100000, guid: a730891191549f541a2d59486ce95a84, type: 2}
+  - regionName: Sidibo
+    smallDecorationItems: []
+    mediumDecorationItems: []
+    largeDecorationItems: []

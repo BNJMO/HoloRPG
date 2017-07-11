@@ -4,35 +4,50 @@ using UnityEngine.VR.WSA;
 
 public class PoiAnchor : AbstractAnchor
 {
-    [Header("POI Parameters")]
-    [SerializeField]
-    private string poiId;
     public string PoiId { get { return poiId; } }
 
-    [Tooltip("Range the user needs to get into to be able to interact with this anchor")]
-    [SerializeField] private float rangeToUser = 3;
-    public bool PlayerInRange { get { return Vector3.Distance(CameraHelper.Stats.camPos, transform.position) < rangeToUser; } }
+    public override bool IsVisible { get { return myVisibiliter.IsVisible; } set { myVisibiliter.IsVisible = value; } }
+
+    public virtual bool PlayerInRange { get { return Utils.GetRelativeDistance(CameraHelper.Stats.camPos, transform.position) < rangeToUser; } }
+    public virtual bool PlayerInVisibilityRange { get { return Utils.GetRelativeDistance(CameraHelper.Stats.camPos, transform.position) < visibilityRange; } }
+    
+    // Useless?
+    public virtual bool NeedsConfirmationToProceed { get { return true; }}
+    public override Vector3 AvatarTargetPosition { get { return  transform.position; }}
 
 
-    public override bool IsActive
+    [Header("POI Parameters")]
+    [SerializeField] private string poiId;
+
+    
+    private VisibiliterMesh myVisibiliter;
+
+    protected virtual void Awake()
     {
-        get { return flagChild.activeSelf; }
-
-        set
-        {
-//#if UNITY_EDITOR
-            // We want to see the POIs in Unity Editor   (EDIT : Always!)
-            flagChild.SetActive(true);  
-/*#else
-            flagChild.SetActive(value); 
-#endif*/
-        }
+        myVisibiliter = gameObject.AddComponent<VisibiliterMesh>();
+        myVisibiliter.VisibilityCondition = Condition.New(() => PlayerInVisibilityRange == true);
     }
 
-    public virtual bool NeedsConfirmationToProceed { get { return true; }}
+    protected override void Start()
+    {
+        base.Start();
+        // make sure visibility range is always bigger than range to user
+        if (visibilityRange <= rangeToUser) 
+        {
+            visibilityRange = rangeToUser + 1;
+        } 
+    }
 
-    public override Vector3 AvatarTargetPosition
-    { get { return  transform.position; }}
+    protected virtual void Update()
+    {
+
+    }
+
+    
+
+    
+
+
 
 }
 

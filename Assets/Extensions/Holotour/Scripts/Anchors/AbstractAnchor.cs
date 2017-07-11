@@ -4,21 +4,12 @@ using UnityEngine.VR.WSA;
 
 public abstract class AbstractAnchor : MonoBehaviour, IAnchor, IGazeable
 {
+    public string Region { get { return region; } }
+
+    public virtual bool IsVisible { get { return flagChild.activeSelf; } set { flagChild.SetActive(value); } }
+  
     protected AnchorManager anchorManager; 
 
-    
-    [SerializeField]
-    protected AnchorUI anchorUI { get; private set; }
-
-    [Header("Anchor Parameters")]
-    [SerializeField]
-    protected GameObject flagChild;
-
-    [SerializeField]
-    private float visibilityDistance = 5;
-    
-    public virtual bool IsActive { get { return flagChild.activeSelf; } set { flagChild.SetActive(value); } }
-    public virtual bool IsVisible { get { return Vector3.Distance(transform.position, GetRelativePosition(CameraHelper.Stats.camPos)) < visibilityDistance; } }
     public abstract Vector3 AvatarTargetPosition { get; }
 
     public Vector3 AnchorPosition { get { return transform.position; }
@@ -42,26 +33,42 @@ public abstract class AbstractAnchor : MonoBehaviour, IAnchor, IGazeable
     public GameObject GameObject { get { return gameObject; }}
 
 
+    // Inspector variables
+    [Header("Anchor Parameters")]
+    [Tooltip("Leave it as it is if this anchor should not be associated to a region")]
+    [SerializeField] protected string region = "NoRegion";
+    [SerializeField] protected GameObject flagChild;
+    /// <summary>
+    /// Range the user needs to get into to be able to interact with this anchor
+    /// </summary>
+    [SerializeField] protected float rangeToUser = 4;
+    /// <summary>
+    /// Range the user needs to get into to be able to see this anchor
+    /// </summary>
+    [SerializeField] protected float visibilityRange = 10;
+    [SerializeField] protected AnchorUI anchorUI { get; private set; }
+
+
+    // Methods
+
     protected virtual void Start()    
     {
 		anchorManager = AnchorManager.Instance;
 
-        if (anchorUI == null)
+        // No Anchor UI
+
+   /*     if (anchorUI == null)
         {
 			GameObject newObject = new GameObject ("AnchorUI");
 			newObject.transform.SetParent (flagChild.transform);
 			anchorUI = newObject.AddComponent<AnchorUI>();
-        }
+        }*/
 
-        IsActive = !ApplicationStateManager.IsUserMode;
+    //    IsVisible = !ApplicationStateManager.IsUserMode;
     }
 
+    
 
-    //                                      TODO : implement visibility !!!!
-   /* protected void Update()
-    {
-
-    }*/
 
 	public virtual void OnGazeEnter(RaycastHit hitinfo)
 	{
@@ -96,5 +103,7 @@ public abstract class AbstractAnchor : MonoBehaviour, IAnchor, IGazeable
             originalPosition.z      
         );
     }
+
+
 }
 

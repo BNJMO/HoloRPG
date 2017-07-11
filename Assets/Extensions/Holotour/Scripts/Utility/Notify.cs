@@ -45,6 +45,7 @@ public class Notify : HoloToolkit.Unity.Singleton<Notify>
     public static void Debug(string text)
     {
         Notify.Instance.DebugInternal(text);
+        UnityEngine.Debug.Log(text);
     }
 
     private void ShowInternal(string text, float displaytime) {

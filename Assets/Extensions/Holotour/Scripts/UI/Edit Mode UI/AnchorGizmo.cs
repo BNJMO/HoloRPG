@@ -18,7 +18,7 @@ public interface IAnchorGizmo
     { get; set;  }
 
 
-    bool Visible
+    bool IsVisible
     { get; set; }
 }
 
@@ -74,7 +74,7 @@ public class AnchorGizmo : MonoBehaviour, IAnchorGizmo
     public virtual bool Highlighted
     { get; set; }
 
-    public bool Visible
+    public bool IsVisible
     {
         get
         {

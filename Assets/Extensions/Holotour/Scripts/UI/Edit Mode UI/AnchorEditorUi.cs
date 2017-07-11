@@ -24,7 +24,7 @@ public class AnchorEditorUi : HoloToolkit.Unity.Singleton<AnchorEditorUi>, IKeyw
     // Gizmos
     private IAnchorGizmo waypointCreatingGizmo;
     private IAnchorGizmo placingGizmo;
-    private IAnchorGizmo waypointPlacingGizmo;
+//    private IAnchorGizmo waypointPlacingGizmo;
     private Dictionary<string, IAnchorGizmo> poiGizmos = new Dictionary<string, IAnchorGizmo>();
   //  private IAnchor gazedAnchor = null; 
     private IAnchor grabbedAnchor;
@@ -87,7 +87,6 @@ public class AnchorEditorUi : HoloToolkit.Unity.Singleton<AnchorEditorUi>, IKeyw
     void Update()
     {
         UpdateUi();
-        DebugLog.Instance.LogIntern("cond : " + IsGazedAnchorSelection);
     }
 
 
@@ -207,7 +206,7 @@ public class AnchorEditorUi : HoloToolkit.Unity.Singleton<AnchorEditorUi>, IKeyw
     public void HideAnchors()
     {
         uiHidden = true;
-        AnchorManager.Instance.AnchorList.ForEach(a => a.IsActive = false);
+        AnchorManager.Instance.AnchorList.ForEach(a => a.IsVisible = false);
         UpdateUi();
     }
 
@@ -217,7 +216,7 @@ public class AnchorEditorUi : HoloToolkit.Unity.Singleton<AnchorEditorUi>, IKeyw
     public void ShowAnchors()
     {
         uiHidden = false;
-        AnchorManager.Instance.AnchorList.ForEach(a => a.IsActive = true);
+        AnchorManager.Instance.AnchorList.ForEach(a => a.IsVisible = true);
         UpdateUi();
     }
 
@@ -253,17 +252,17 @@ public class AnchorEditorUi : HoloToolkit.Unity.Singleton<AnchorEditorUi>, IKeyw
     private void CreateAnchorGizmo()
     {
         //PointOfInterestManager.Instance.GetPOI(productId).AnchorPrefab
-        waypointCreatingGizmo = Instantiate(Resources.Load("AnchorGizmo") as GameObject, anchorParent).GetComponentInChildren<IAnchorGizmo>();
-        waypointCreatingGizmo.Visible = false;
+        waypointCreatingGizmo = Instantiate(Resources.Load("B_AnchorGizmo") as GameObject, anchorParent).GetComponentInChildren<IAnchorGizmo>();
+        waypointCreatingGizmo.IsVisible = false;
 
-        waypointPlacingGizmo = Instantiate(Resources.Load("WaypointPlacingGizmo") as GameObject, anchorParent).GetComponentInChildren<IAnchorGizmo>();
-        waypointPlacingGizmo.Visible = false;
+       /* waypointPlacingGizmo = Instantiate(Resources.Load("B_WaypointPlacingGizmo") as GameObject, anchorParent).GetComponentInChildren<IAnchorGizmo>();
+        waypointPlacingGizmo.IsVisible = false;*/
 
         foreach (PointOfInterestManager.PointOfInterest poi in PointOfInterestManager.Instance.GetPOIs())
         {
             IAnchorGizmo gizmo = Instantiate(poi.GizmoPrefab, anchorParent).GetComponentInChildren<IAnchorGizmo>();
             poiGizmos.Add(poi.Id, gizmo);
-            gizmo.Visible = false;
+            gizmo.IsVisible = false;
         }
     }
 
@@ -274,11 +273,11 @@ public class AnchorEditorUi : HoloToolkit.Unity.Singleton<AnchorEditorUi>, IKeyw
     {
         Vector3 pos;
 
-        waypointCreatingGizmo.Visible = false;
-        waypointPlacingGizmo.Visible = false;
+        waypointCreatingGizmo.IsVisible = false;
+      //  waypointPlacingGizmo.IsVisible = false;
         foreach(IAnchorGizmo poiGizmo in poiGizmos.Values)
         {
-            poiGizmo.Visible = false;
+            poiGizmo.IsVisible = false;
         }
 
         if (uiHidden /*|| WaypointTracingManager.Instance.IsRecording*/)
@@ -288,10 +287,10 @@ public class AnchorEditorUi : HoloToolkit.Unity.Singleton<AnchorEditorUi>, IKeyw
 
         if (GazedAnchor == null)
         {
-            if (GetPositionForNewWaypoint(out pos))
+            if (GetPositionForNewAnchor(out pos))
             {
                 placingGizmo = waypointCreatingGizmo;
-                placingGizmo.Visible = true;
+                placingGizmo.IsVisible = true;
                 placingGizmo.Position = pos;
                 Vector3 rotation = (pos - CameraHelper.Stats.camPos).normalized;
                 rotation.y = 0;
@@ -316,10 +315,10 @@ public class AnchorEditorUi : HoloToolkit.Unity.Singleton<AnchorEditorUi>, IKeyw
         {
             SetAnchorGizmo(poiGizmos[PointOfInterestManager.Instance.GetIdOfAnchor(GazedAnchor)], GazedAnchor);
         } 
-        else if(GazedAnchor is WaypointAnchor)
+     /*   else if(GazedAnchor is WaypointAnchor)
         {
             SetAnchorGizmo(waypointPlacingGizmo, GazedAnchor);
-        }
+        }*/
     }
 
     private void SetAnchorGizmo(IAnchorGizmo productXGizmo, IAnchor selectedAnchor)
@@ -330,7 +329,7 @@ public class AnchorEditorUi : HoloToolkit.Unity.Singleton<AnchorEditorUi>, IKeyw
             placingGizmo.Position = selectedAnchor.AnchorPosition;
             placingGizmo.Rotation = selectedAnchor.AnchorRotation;
         }
-        placingGizmo.Visible = true;
+        placingGizmo.IsVisible = true;
     }
 
   /*  /// <summary>
@@ -402,7 +401,7 @@ public class AnchorEditorUi : HoloToolkit.Unity.Singleton<AnchorEditorUi>, IKeyw
     {
         IAnchor result = null;
         Vector3 pos;
-        if (GetPositionForNewWaypoint(out pos))
+        if (GetPositionForNewAnchor(out pos))
         {
            /* if (IsInsertMoveActive)
             {
@@ -451,7 +450,7 @@ public class AnchorEditorUi : HoloToolkit.Unity.Singleton<AnchorEditorUi>, IKeyw
     /// </summary>
     /// <param name="pos"></param>
     /// <returns>If there is a valid anchor position.</returns>
-    private bool GetPositionForNewWaypoint(out Vector3 pos)
+    private bool GetPositionForNewAnchor(out Vector3 pos)
     {
         if (WorldCursor.CursorHitSth && !WorldCursor.CursorHitSpatialCollider)
         {
@@ -482,7 +481,7 @@ public class AnchorEditorUi : HoloToolkit.Unity.Singleton<AnchorEditorUi>, IKeyw
     private IAnchor GetPossibleInsertModeStartPoint()
     {
         Vector3 pos;
-        if (GetPositionForNewWaypoint(out pos))
+        if (GetPositionForNewAnchor(out pos))
         {
             List<IAnchor> anchorList = AnchorManager.Instance.AnchorList;
             for (int i = 1; i < anchorList.Count; i++)
@@ -523,7 +522,7 @@ public class AnchorEditorUi : HoloToolkit.Unity.Singleton<AnchorEditorUi>, IKeyw
         CreateNewAnchorAtWorldCursorPosition("Selection");
     }
    
-    private void NewMonsterZoneAnchor()
+    private void NewMonsterSelectionAnchor()
     {
         if (GazedAnchor != null)
         {
@@ -536,7 +535,7 @@ public class AnchorEditorUi : HoloToolkit.Unity.Singleton<AnchorEditorUi>, IKeyw
         }
     }
 
-    private void NewNPCAnchor()
+    private void NewNPCSlectionAnchor()
     {
         if (GazedAnchor != null)
         {
@@ -549,7 +548,7 @@ public class AnchorEditorUi : HoloToolkit.Unity.Singleton<AnchorEditorUi>, IKeyw
         }
     }
 
-    private void NewMonster(string anchorID)
+    private void NewAnchor(string anchorID)
     {
         if (GazedAnchor != null)
         {
@@ -593,15 +592,21 @@ public class AnchorEditorUi : HoloToolkit.Unity.Singleton<AnchorEditorUi>, IKeyw
 
 
         result.Add(new KeywordCommand(() => { NewSelectionAnchor(); },   condEditMode.And(condAnchorPlacingMode.Not()).And(condNoAnchorGazed).And(condGazedAnchorSelection.Not()),                                     "New Selection Anchor", KeyCode.T));
-        result.Add(new KeywordCommand(() => { NewMonsterZoneAnchor(); }, condEditMode.And(condAnchorPlacingMode.Not()).And(condGazedAnchorSelection),                                                                   "New Monster Anchor", KeyCode.Z));
-        result.Add(new KeywordCommand(() => { NewNPCAnchor(); },         condEditMode.And(condAnchorPlacingMode.Not()).And(condGazedAnchorSelection),                                                             "New NPC Anchor", KeyCode.U));
+        result.Add(new KeywordCommand(() => { NewMonsterSelectionAnchor(); }, condEditMode.And(condAnchorPlacingMode.Not()).And(condGazedAnchorSelection),                                                                   "New Monster Anchor", KeyCode.Z));
+        result.Add(new KeywordCommand(() => { NewNPCSlectionAnchor(); },         condEditMode.And(condAnchorPlacingMode.Not()).And(condGazedAnchorSelection),                                                             "New NPC Anchor", KeyCode.U));
 
-
-        result.Add(new KeywordCommand(() => { NewMonster("Rhino1"); }, condEditMode.And(condAnchorPlacingMode.Not()).And(condGazedAnchorMonster),                                                                   "New Monster 1", KeyCode.I));
-        result.Add(new KeywordCommand(() => { NewMonster("Rhino2"); }, condEditMode.And(condAnchorPlacingMode.Not()).And(condGazedAnchorMonster),                                                                  "New Monster 2", KeyCode.Alpha8));
-        result.Add(new KeywordCommand(() => { NewMonster("Rhino3"); }, condEditMode.And(condAnchorPlacingMode.Not()).And(condGazedAnchorMonster),                                                                  "New Monster 3", KeyCode.Alpha7));
-        result.Add(new KeywordCommand(() => { NewMonster("Rhino4"); }, condEditMode.And(condAnchorPlacingMode.Not()).And(condGazedAnchorMonster),                                                                      "New Monster 4", KeyCode.Alpha6));
- 
+        // Enemies
+        result.Add(new KeywordCommand(() => { NewAnchor("Rhino1"); }, condEditMode.And(condAnchorPlacingMode.Not()).And(condGazedAnchorMonster),                                                                   "New Rhino 1", KeyCode.I));
+        result.Add(new KeywordCommand(() => { NewAnchor("Rhino2"); }, condEditMode.And(condAnchorPlacingMode.Not()).And(condGazedAnchorMonster),                                                                  "New Rhino 2", KeyCode.Alpha8));
+        result.Add(new KeywordCommand(() => { NewAnchor("Rhino3"); }, condEditMode.And(condAnchorPlacingMode.Not()).And(condGazedAnchorMonster),                                                                  "New Rhino 3", KeyCode.Alpha7));
+        result.Add(new KeywordCommand(() => { NewAnchor("Rhino4"); }, condEditMode.And(condAnchorPlacingMode.Not()).And(condGazedAnchorMonster),                                                                      "New Rhino 4", KeyCode.Alpha6));
+        result.Add(new KeywordCommand(() => { NewAnchor("Devil"); }, condEditMode.And(condAnchorPlacingMode.Not()).And(condGazedAnchorMonster),                                                                      "New Devil", KeyCode.Alpha5));
+        
+        // NPCs
+        result.Add(new KeywordCommand(() => { NewAnchor("Soldier"); }, condEditMode.And(condAnchorPlacingMode.Not()).And(condGazedAnchorNPC),                                                                      "New Soldier"));
+        result.Add(new KeywordCommand(() => { NewAnchor("FemaleWarrior1"); }, condEditMode.And(condAnchorPlacingMode.Not()).And(condGazedAnchorNPC),                                                                 "New Female Warrior 1",  KeyCode.O));
+        result.Add(new KeywordCommand(() => { NewAnchor("FemaleWarrior2"); }, condEditMode.And(condAnchorPlacingMode.Not()).And(condGazedAnchorNPC),                                                                 "New Female Warrior 2",  KeyCode.P));
+        result.Add(new KeywordCommand(() => { NewAnchor("OldMan"); }, condEditMode.And(condAnchorPlacingMode.Not()).And(condGazedAnchorNPC),                                                                 "New Old Man", KeyCode.Alpha4));
 
         result.Add(new KeywordCommand(() => { DeleteAnchor(); },         condEditMode.And(condAnchorPlacingMode.Not()).And(condAnchorGazed),                                                                            "Delete", KeyCode.X));
         result.Add(new KeywordCommand(() => { GrabGazedAnchor(); },      condEditMode.And(condAnchorPlacingMode.Not()).And(condAnchorGazed),                                                                            "Take", KeyCode.Y));

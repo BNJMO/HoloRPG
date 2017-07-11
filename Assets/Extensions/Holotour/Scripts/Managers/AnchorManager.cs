@@ -37,7 +37,6 @@ public class AnchorManager : HoloToolkit.Unity.Singleton<AnchorManager>
 
     public IAnchor AddAnchor(string anchorID, Vector3 position)
     {
-        Debug.Log ("AddAnchor : " + anchorID);
         return AddNewAnchor(position, PointOfInterestManager.Instance.GetPOI(anchorID).AnchorPrefab);
     }
 

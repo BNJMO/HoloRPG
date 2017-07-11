@@ -71,9 +71,11 @@ public class KeywordCommandManager : HoloToolkit.Unity.Singleton<KeywordCommandM
 
 		if (keywords.Count > 0)
 		{
-			keywordRecognizer = new KeywordRecognizer(keywords.ToArray());
+#if UNITY_EDITOR == false	
+            keywordRecognizer = new KeywordRecognizer(keywords.ToArray());
 			keywordRecognizer.OnPhraseRecognized += OnKeywordRecognized;
 			keywordRecognizer.Start();
+#endif
 		}
 	}
 

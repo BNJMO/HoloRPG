@@ -7,6 +7,6 @@ public class BasicEnemy : AbstractEnemy
 {
     protected override void Attack()
     {
-        GameManger.Instance.ReducePlayerLife(AD);
+        GameManger.Instance.InvokePlayerGotHit(AD);
     }
 }

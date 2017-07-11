@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1555320621174188}
+  m_IsPrefabParent: 1
+--- !u!1 &1555320621174188
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4542675635162932}
+  - component: {fileID: 114587302627409432}
+  m_Layer: 0
+  m_Name: Q_Kill_5_Small_Rhinos
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4542675635162932
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1555320621174188}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.43501115, y: 0.38651645, z: -1.8924985}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114587302627409432
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1555320621174188}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5583f6e39983dda4ea32224d987b009d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questID: Q_Kill_5_Small_Rhinos
+  questDescription: Kill 5 small Rhinos
+  xpReward: 50
+  reward: {fileID: 114416375219849594, guid: 933eec2edc7a3704b946b37f2ba31a42, type: 2}
+  welcomeClip: {fileID: 8300000, guid: 2ec77db788d3b124dbf579c84b8d0b78, type: 3}
+  mainQuestClip: {fileID: 8300000, guid: 7a28ea2b90cdc2949893fce81263c1ce, type: 3}
+  pendingClip: {fileID: 8300000, guid: 9eb23c8bcba498742916abb4caef6e26, type: 3}
+  completedClip: {fileID: 8300000, guid: 6969e4ebf680a34468b4b32592de82a8, type: 3}
+  enemyToKill: {fileID: 114569457090105566, guid: 33e395040d67d1c4abd0ee2ae95cac71,
+    type: 2}
+  numberToKill: 5
