@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class Utils : MonoBehaviour {
 
@@ -89,6 +90,10 @@ public class Utils : MonoBehaviour {
     {
         AudioSource aS = toGameObject.AddComponent<AudioSource>();
         aS.playOnAwake = false;
+        if (SoundAndEffectManager.Instance != null)
+        {
+            aS.outputAudioMixerGroup = GetMasterGroup();
+        }
         return aS;
     }
 
@@ -96,6 +101,10 @@ public class Utils : MonoBehaviour {
     {
         AudioSource aS = toGameObject.AddComponent<AudioSource>();
         aS.playOnAwake = false;
+        if (SoundAndEffectManager.Instance != null)
+        {
+            aS.outputAudioMixerGroup = GetMasterGroup();
+        }
         if (is3D == true)
         {
             aS.spatialBlend = 1.0f;
@@ -111,6 +120,10 @@ public class Utils : MonoBehaviour {
     {
         AudioSource aS = toGameObject.AddComponent<AudioSource>();
         aS.playOnAwake = false;
+        if (SoundAndEffectManager.Instance != null)
+        {
+            aS.outputAudioMixerGroup = GetMasterGroup();
+        }
         if (is3D == true)
         {
             aS.spatialBlend = 1.0f;
@@ -127,6 +140,10 @@ public class Utils : MonoBehaviour {
     {
         AudioSource aS = toGameObject.AddComponent<AudioSource>();
         aS.playOnAwake = false;
+        if (SoundAndEffectManager.Instance != null)
+        {
+            aS.outputAudioMixerGroup = GetMasterGroup();
+        }
         if (is3D == true)
         {
             aS.spatialBlend = 1.0f;
@@ -140,5 +157,29 @@ public class Utils : MonoBehaviour {
         return aS;
     }
 
-#endregion
+    public static AudioSource AddAudioListener(GameObject toGameObject, bool is3D, float volume, bool isLoop, AudioMixerGroup audioMixerGroup)
+    {
+        AudioSource aS = toGameObject.AddComponent<AudioSource>();
+        aS.playOnAwake = false;
+        aS.outputAudioMixerGroup = audioMixerGroup;
+        if (is3D == true)
+        {
+            aS.spatialBlend = 1.0f;
+        }
+        else
+        {
+            aS.spatialBlend = 0.0f;
+        }
+        aS.volume = volume;
+        aS.loop = isLoop;
+        return aS;
+    }
+
+    private static AudioMixerGroup GetMasterGroup()
+    {
+        var mixer = Resources.Load<UnityEngine.Audio.AudioMixer>(SoundAndEffectManager.MIXER_NAME);
+        return mixer.FindMatchingGroups("Master")[0];
+    }
+
+    #endregion
 }

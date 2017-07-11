@@ -18,13 +18,17 @@ public class ElderGods : MonoBehaviour {
 
     private void Awake()
     {
-        myParticleSystem    = GetComponent<ParticleSystem>();
-        myFX_AudioSource    = Utils.AddAudioListener(gameObject, true);
-        myText_AudioSource  = Utils.AddAudioListener(gameObject, true);
+        myParticleSystem = GetComponent<ParticleSystem>();
     }
 
     private void Start()
     {
+        // init Audio
+        var mixer = Resources.Load<UnityEngine.Audio.AudioMixer>(SoundAndEffectManager.MIXER_NAME);
+        var group = mixer.FindMatchingGroups("NPCs")[0];
+        myText_AudioSource  = Utils.AddAudioListener(gameObject, true, 1.0f, false, group);
+        myFX_AudioSource    = Utils.AddAudioListener(gameObject, true, 1.0f, false, group);
+
         StartCoroutine(AppearRoutine());
     }
 

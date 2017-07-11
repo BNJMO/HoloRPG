@@ -84,6 +84,7 @@ public abstract class AbstractEnemy : PoiAnchor, IEnemy {
         myAnimator = GetComponentInChildren<Animator>();
 
         CreateAudioSources();
+
     }
 
     
@@ -91,6 +92,7 @@ public abstract class AbstractEnemy : PoiAnchor, IEnemy {
     protected override void Start()
     {
         base.Start();
+
         restPosition = transform.position;
         
     //    EnemyKilled += GameManger.Instance.OnEnemyKilled;
@@ -324,41 +326,14 @@ public abstract class AbstractEnemy : PoiAnchor, IEnemy {
     // INIT
     private void CreateAudioSources()
     {
-        GameObject parent = new GameObject("AudioSources");
-        parent.transform.parent = transform;
+        var mixer = Resources.Load<UnityEngine.Audio.AudioMixer>(SoundAndEffectManager.MIXER_NAME);
+        var group = mixer.FindMatchingGroups("Enemies")[0];
 
-        GameObject tmp;
-
-        tmp = new GameObject("attack_AudioSource");
-        tmp.transform.parent = parent.transform;
-        attack_AudioSource = tmp.AddComponent<AudioSource>();
-        attack_AudioSource.playOnAwake = false;
-        attack_AudioSource.spatialBlend = 1.0f;
-
-        tmp = new GameObject("chase_AudioSource");
-        tmp.transform.parent = parent.transform;
-        chase_AudioSource = tmp.AddComponent<AudioSource>();
-        chase_AudioSource.playOnAwake = false;
-        chase_AudioSource.spatialBlend = 1.0f;
-
-        tmp = new GameObject("walk_AudioSource");
-        tmp.transform.parent = parent.transform;
-        walk_AudioSource = tmp.AddComponent<AudioSource>();
-        walk_AudioSource.playOnAwake = false;
-        walk_AudioSource.spatialBlend = 1.0f;
-        walk_AudioSource.loop = true;
-
-        tmp = new GameObject("die_AudioSource");
-        tmp.transform.parent = parent.transform;
-        die_AudioSource = tmp.AddComponent<AudioSource>();
-        die_AudioSource.playOnAwake = false;
-        die_AudioSource.spatialBlend = 1.0f;
-
-        tmp = new GameObject("respawn_AudioSource");
-        tmp.transform.parent = parent.transform;
-        respawn_AudioSource = tmp.AddComponent<AudioSource>();
-        respawn_AudioSource.playOnAwake = false;
-        respawn_AudioSource.spatialBlend = 1.0f;
+        attack_AudioSource  = Utils.AddAudioListener(gameObject, true, 1.0f, false, group);
+        chase_AudioSource   = Utils.AddAudioListener(gameObject, true, 1.0f, false, group);
+        walk_AudioSource    = Utils.AddAudioListener(gameObject, true, 0.75f, true, group);
+        die_AudioSource     = Utils.AddAudioListener(gameObject, true, 1.0f, false, group);
+        respawn_AudioSource = Utils.AddAudioListener(gameObject, true, 1.0f, false, group);
     }
 
     #endregion

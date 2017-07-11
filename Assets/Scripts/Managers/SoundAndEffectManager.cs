@@ -1,8 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class SoundAndEffectManager : HoloToolkit.Unity.Singleton<SoundAndEffectManager> {
+
+    public const string MIXER_NAME = "HoloRPG_Mixer";
 
     private GameObject levelUp_Effect;
     private GameObject newRegion_Effect;
@@ -23,8 +26,11 @@ public class SoundAndEffectManager : HoloToolkit.Unity.Singleton<SoundAndEffectM
     {
         base.Awake();
 
-        background_AudioSource = Utils.AddAudioListener(gameObject, false, 0.3f, true);
-        combat_AudioSource = Utils.AddAudioListener(gameObject);
+        var mixer = Resources.Load<UnityEngine.Audio.AudioMixer>(SoundAndEffectManager.MIXER_NAME);
+        var group = mixer.FindMatchingGroups("Background")[0];
+
+        background_AudioSource  = Utils.AddAudioListener(gameObject, false, 0.3f, true, group);
+        combat_AudioSource      = Utils.AddAudioListener(gameObject); // not used yet
 
         levelUp_Effect = Resources.Load<GameObject>("LevelUP_effect");
         if (levelUp_Effect == null) Debug.LogError("levelUp_effect not found");

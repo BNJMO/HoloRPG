@@ -30,13 +30,10 @@ public abstract class AbstracNpc : PoiAnchor, INpc, IKeywordCommandProvider {
     {
         base.Awake();
 
-        myAudioSource = GetComponent<AudioSource>();
-        if (myAudioSource == null)
-        {
-            myAudioSource = gameObject.AddComponent<AudioSource>();
-            myAudioSource.playOnAwake = false;
-            myAudioSource.spatialBlend = 1.0f;
-        }
+        var mixer = Resources.Load<UnityEngine.Audio.AudioMixer>(SoundAndEffectManager.MIXER_NAME);
+        var group = mixer.FindMatchingGroups("NPCs")[0];
+        myAudioSource = Utils.AddAudioListener(gameObject, true, 1.0f, false, group);
+
         myAnimator = GetComponentInChildren<Animator>();
         initialRotation = transform.rotation;
 
