@@ -30,6 +30,8 @@ public class QuestManager : HoloToolkit.Unity.Singleton<QuestManager> {
 
             GameManger.Instance.InvokeQuestTaken(newQuest);
             GameManger.Instance.InvokeUpdateWorldUI();
+
+            Notify.Show("Quest <b>" + newQuest.ShortDescription + "</b> accepted", 5);
         }
         else
         {

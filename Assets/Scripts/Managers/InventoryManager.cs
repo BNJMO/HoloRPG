@@ -64,11 +64,15 @@ public class InventoryManager : HoloToolkit.Unity.Singleton<InventoryManager> {
         return result;
     }
 
+    /// <summary>
+    /// Add new item to inventory.
+    /// </summary>
     private void AddItem(IITem newItem)
     {
         collectedItems[newItem.ItemID]++;
         GameManger.Instance.InvokeUpdateWorldUI();
 
+        Notify.Show("<b>" + newItem.ItemName + "</b> collected", 3);
     }
 
     private bool HasItem(IITem item)

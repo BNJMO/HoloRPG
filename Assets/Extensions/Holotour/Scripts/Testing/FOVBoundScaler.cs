@@ -50,6 +50,25 @@ public class FOVBoundScaler : MonoBehaviour, IKeywordCommandProvider {
         result.Add(new KeywordCommand(() => { MoveUp(3); }, "buttom up"));
         result.Add(new KeywordCommand(() => { MoveDown(3); }, "buttom down"));
 
+        result.Add(new KeywordCommand(() => { ShowBounds(); }, "show bounds"));
+        result.Add(new KeywordCommand(() => { HideBounds(); }, "hide bounds"));
+
         return result;
+    }
+
+    private void ShowBounds()
+    {
+        foreach(RectTransform trans in bounds)
+        {
+            trans.gameObject.SetActive(true);
+        }
+    }
+
+    private void HideBounds()
+    {
+        foreach (RectTransform trans in bounds)
+        {
+            trans.gameObject.SetActive(false);
+        }
     }
 }

@@ -235,6 +235,7 @@ public class SpellsManager : HoloToolkit.Unity.Singleton<SpellsManager>, IKeywor
         DisableAllHandObjects();
         currentHandObject = fire_HandObject;
         timeSinceLastFire = 0;
+        Notify.Show("You have equiped FIRE spell", 3);
     }
 
     private void SetIce()
@@ -244,6 +245,7 @@ public class SpellsManager : HoloToolkit.Unity.Singleton<SpellsManager>, IKeywor
         DisableAllHandObjects();
         currentHandObject = ice_HandObject;
         timeSinceLastFire = 0;
+        Notify.Show("You have equiped ICE spell", 3);
     }
 
     private void SetRock()
@@ -253,6 +255,7 @@ public class SpellsManager : HoloToolkit.Unity.Singleton<SpellsManager>, IKeywor
         DisableAllHandObjects();
         currentHandObject = rock_HandObject;
         timeSinceLastFire = 0;
+        Notify.Show("You have equiped ROCK spell", 3);
     }
 
     private void SetDark()
@@ -262,6 +265,7 @@ public class SpellsManager : HoloToolkit.Unity.Singleton<SpellsManager>, IKeywor
         DisableAllHandObjects();
         currentHandObject = dark_HandObject;
         timeSinceLastFire = 0;
+        Notify.Show("You have equiped DARK spell", 3);
     }
 
     private void SetLight()
@@ -271,6 +275,7 @@ public class SpellsManager : HoloToolkit.Unity.Singleton<SpellsManager>, IKeywor
         DisableAllHandObjects();
         currentHandObject = light_HandObject;
         timeSinceLastFire = 0;
+        Notify.Show("You have equiped LIGHT spell", 3);
     }
 
 
