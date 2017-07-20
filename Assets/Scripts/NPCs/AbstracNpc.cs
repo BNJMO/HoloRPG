@@ -53,7 +53,7 @@ public abstract class AbstracNpc : PoiAnchor, INpc, IKeywordCommandProvider {
         myQuestUI.transform.localPosition = new Vector3 (0, 2.5f, 0);
         if (currentQuest.IsAvailable == true)
         {
-            myQuestUI.SetQuestWaiting();
+            myQuestUI.SetQuestAvailable();
         }
         myHintUI = Instantiate(Resources.Load<HintUI>("HintUI"), transform);
         myHintUI.transform.localPosition = new Vector3(0, 1.4f, 1f);
@@ -62,9 +62,6 @@ public abstract class AbstracNpc : PoiAnchor, INpc, IKeywordCommandProvider {
     protected override void Start()
     {
         base.Start();
-
-        GameManger.Instance.QuestCompleted += OnQuestCompleted;
-        GameManger.Instance.QuestTaken += OnQuestTaken;
 
         KeywordCommandManager.Instance.AddKeywordCommandProvider(this);
     }
@@ -114,29 +111,13 @@ public abstract class AbstracNpc : PoiAnchor, INpc, IKeywordCommandProvider {
             noMoreQuest = true;
             myQuestUI.SetNoQuest();
         }
-        else
+        else // still more quests available
         {
             currentQuest = quests[questIndex];
-        }
-    }
-
-    private void OnQuestCompleted(IQuest quest)
-    {
-        if (currentQuest.IsCompleted == true)
-        {
-            myQuestUI.SetQuestCompleted();
-        }
-        else if (currentQuest.IsAvailable == true)
-        {
-            myQuestUI.SetQuestWaiting();
-        }
-    }
-
-    private void OnQuestTaken(IQuest quest)
-    {
-        if (currentQuest.IsAvailable == true)
-        {
-            myQuestUI.SetQuestWaiting();
+            if (currentQuest.IsAvailable == true)
+            {
+                myQuestUI.SetQuestAvailable();
+            }
         }
     }
 
@@ -160,8 +141,8 @@ public abstract class AbstracNpc : PoiAnchor, INpc, IKeywordCommandProvider {
         Condition condIsNotTalking  = Condition.New(() => isTalking == false);
         Condition condYesNoQuestion = Condition.New(() => isWaitingForAnswer == true); // REPLACE WITH == !!!! (only for testing purpose)
         // TODO : implement rest
-        result.Add(new KeywordCommand(() => { OnHi(); }, condPlayerInRange.And(condIsNotTalking), "Hi", KeyCode.M));
-        result.Add(new KeywordCommand(() => { OnHi(); }, condPlayerInRange.And(condIsNotTalking), "Hello"          ));
+   //     result.Add(new KeywordCommand(() => { OnHi(); }, condPlayerInRange.And(condIsNotTalking), "Hi", KeyCode.M));
+        result.Add(new KeywordCommand(() => { OnHi(); }, condPlayerInRange.And(condIsNotTalking), "Hello", KeyCode.M));
         result.Add(new KeywordCommand(() => { OnYes(); }, condPlayerInRange.And(condYesNoQuestion), "Yes", KeyCode.N));
         result.Add(new KeywordCommand(() => { OnYes(); }, condPlayerInRange.And(condYesNoQuestion), "Ok"            ));
         result.Add(new KeywordCommand(() => { OnNo(); }, condPlayerInRange.And(condYesNoQuestion), "No", KeyCode.B));
@@ -173,6 +154,8 @@ public abstract class AbstracNpc : PoiAnchor, INpc, IKeywordCommandProvider {
     {
         // for testing
         Debug.Log ("hi");
+        myHintUI.HideHintText();
+
         Say(currentQuest.welcomeClip, () => 
         {
             if (noMoreQuest == false)
@@ -223,6 +206,8 @@ public abstract class AbstracNpc : PoiAnchor, INpc, IKeywordCommandProvider {
         Say(currentQuest.confirmationClip);
         QuestManager.Instance.AcceptQuest(currentQuest);
         isWaitingForAnswer = false;
+        // update UI
+        myQuestUI.SetQuestPending();
         myHintUI.HideHintText();
         // wait a frame for QuestManager to instantiate quest
         yield return new WaitForEndOfFrame();

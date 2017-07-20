@@ -12,12 +12,12 @@ public class QuestUI : MonoBehaviour {
         myTextMesh = GetComponentInChildren<TextMesh>();
     }
 
-    public void SetQuestWaiting()
+    public void SetQuestAvailable()
     {
         myTextMesh.text = "?";
     }
 
-    public void SetQuestCompleted()
+    public void SetQuestPending()
     {
         myTextMesh.text = "!";
     }
