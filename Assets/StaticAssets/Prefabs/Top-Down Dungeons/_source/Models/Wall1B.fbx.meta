@@ -3,9 +3,14 @@ guid: 5fcfdcfbc84eb9c4899d4c45a8aef05e
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
+    100000: //RootNode
+    400000: //RootNode
+    2300000: //RootNode
+    3300000: //RootNode
     4300000: skull_small_lp:polySurface469
     4300002: polySurface816
     4300004: polySurface846
+    11100000: //RootNode
   materials:
     importMaterials: 0
     materialName: 0
@@ -16,6 +21,8 @@ ModelImporter:
     resampleCurves: 1
     optimizeGameObjects: 0
     motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
     animationImportErrors: 
     animationImportWarnings: 
     animationRetargetingWarnings: 

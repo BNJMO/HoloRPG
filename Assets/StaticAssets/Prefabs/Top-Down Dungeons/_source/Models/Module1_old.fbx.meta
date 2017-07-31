@@ -3,7 +3,22 @@ guid: fd8e76c2bb7a0f6428441fb719580199
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
+    100000: ground_LP:polySurface247
+    100002: ground_LP:polySurface369
+    100004: ground_LP:polySurface370
+    100006: ground_LP:transform1
+    100008: ground_LP:transform2
+    100010: //RootNode
+    400000: ground_LP:polySurface247
+    400002: ground_LP:polySurface369
+    400004: ground_LP:polySurface370
+    400006: ground_LP:transform1
+    400008: ground_LP:transform2
+    400010: //RootNode
+    2300000: ground_LP:polySurface370
+    3300000: ground_LP:polySurface370
     4300000: ground_LP:polySurface370
+    11100000: //RootNode
   materials:
     importMaterials: 0
     materialName: 0
@@ -14,6 +29,8 @@ ModelImporter:
     resampleCurves: 1
     optimizeGameObjects: 0
     motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
     animationImportErrors: 
     animationImportWarnings: 
     animationRetargetingWarnings: 

@@ -53,6 +53,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   regionDecorations:
   - regionName: Matmata
+    particleEffect: {fileID: 0}
+    mainMonument: {fileID: 0}
     smallDecorationItems:
     - {fileID: 100000, guid: dd5fb3e5201c92940a208b16c692f5d3, type: 2}
     - {fileID: 100000, guid: 5ce541c2ab0e4d94a938babb50da8e5f, type: 2}
@@ -73,7 +75,33 @@ MonoBehaviour:
     - {fileID: 100000, guid: 9e30d7566ca933240aa1ba1419197ab1, type: 2}
     - {fileID: 100000, guid: fbb92caabcc80344281901c76684c461, type: 2}
     - {fileID: 100000, guid: a730891191549f541a2d59486ce95a84, type: 2}
+    backgroundClip: {fileID: 0}
   - regionName: Sidibo
-    smallDecorationItems: []
-    mediumDecorationItems: []
-    largeDecorationItems: []
+    particleEffect: {fileID: 1724004082201634, guid: 26bd0d63bd22d344eac5abcb0c36fb04,
+      type: 2}
+    mainMonument: {fileID: 0}
+    smallDecorationItems:
+    - {fileID: 100000, guid: 4fdfd78c6cdc573448a383a4c2bc3ea8, type: 2}
+    - {fileID: 100000, guid: 3c0c75d5ebe8fcc4e8e6b1638f5cca6e, type: 2}
+    - {fileID: 100000, guid: 793c5460806c487469008c05447c5c92, type: 2}
+    - {fileID: 100000, guid: b0453daa72f27b34d8ac11a49e77c09e, type: 2}
+    - {fileID: 100000, guid: 4ea27ba46c3bbd34baa452565d002170, type: 2}
+    - {fileID: 100000, guid: e5049f574475e7a49816a3cb8125b255, type: 2}
+    - {fileID: 100000, guid: 7b64178480aa86d41a0e03b656ecd504, type: 2}
+    - {fileID: 100000, guid: 5fcdb284571c293468498d6f21087fe1, type: 2}
+    - {fileID: 100000, guid: e8fd0bcf55a895f4f8853156b8c4d9be, type: 2}
+    - {fileID: 100000, guid: 24ccf170f4216d340a645c33b1ad61ba, type: 2}
+    - {fileID: 100000, guid: 87718eb2e1db1e54ab9c97e8846afb6a, type: 2}
+    - {fileID: 100000, guid: bccbd30f2d66e794ba4d8722b1c80b64, type: 2}
+    - {fileID: 100000, guid: b204852410071034e8e99de339dd9190, type: 2}
+    mediumDecorationItems:
+    - {fileID: 100000, guid: 12fa9022fc4f4af4f9d045154dca9040, type: 2}
+    - {fileID: 100000, guid: 8f73071d16c8c324e973c30e10c145e5, type: 2}
+    - {fileID: 100000, guid: 33fbf8b2289593f4298e8555ceb2e909, type: 2}
+    - {fileID: 100000, guid: 76ef0cfad104edf4799897cc2b9e48bf, type: 2}
+    largeDecorationItems:
+    - {fileID: 100000, guid: 2985737cd24e9994e95694e96c4e9571, type: 2}
+    - {fileID: 100000, guid: 57294827ac3e4944295753735c01c5e2, type: 2}
+    - {fileID: 100000, guid: 32bdd73d7e99b664f9974163d282444d, type: 2}
+    - {fileID: 100000, guid: 88d856acead2c5c41a29481e06573b9c, type: 2}
+    backgroundClip: {fileID: 0}

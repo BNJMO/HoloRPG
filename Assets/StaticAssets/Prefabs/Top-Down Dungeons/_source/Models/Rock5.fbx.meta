@@ -3,7 +3,12 @@ guid: 0f96eb27783d7e54fa4f3ae1d116bd96
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
+    100000: //RootNode
+    400000: //RootNode
+    2300000: //RootNode
+    3300000: //RootNode
     4300000: Rock5_LP_Group55873
+    11100000: //RootNode
   materials:
     importMaterials: 0
     materialName: 0
@@ -14,6 +19,8 @@ ModelImporter:
     resampleCurves: 1
     optimizeGameObjects: 0
     motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
     animationImportErrors: 
     animationImportWarnings: 
     animationRetargetingWarnings: 

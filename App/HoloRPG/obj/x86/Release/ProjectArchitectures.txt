@@ -1,1 +1,1 @@
-C:\BNJMO\Personal Training\HoloRPG\holorpg\App\HoloRPG\HoloRPG.csproj;x86
+C:\BNJMO\Personal Training\HoloRPG\HoloRPG (Github)\App\HoloRPG\HoloRPG.csproj;x86

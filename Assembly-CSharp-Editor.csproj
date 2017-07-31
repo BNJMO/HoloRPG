@@ -6,7 +6,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{79252A0C-ACE4-7DAF-0F3D-B7E5A4C1F4CD}</ProjectGuid>
+    <ProjectGuid>{AED58E75-AFC3-916F-9106-D669A84B615B}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp-Editor</AssemblyName>
@@ -39,10 +39,10 @@
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="UnityEngine">
-      <HintPath>C:\Program Files\Unity (5.6)\Editor\Data\PlaybackEngines\MetroSupport/Tools/UnityEngine.dll</HintPath>
+      <HintPath>C:\Program Files\Unity\Editor\Data\PlaybackEngines\MetroSupport/Tools/UnityEngine.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor">
-      <HintPath>C:/Program Files/Unity (5.6)/Editor/Data/Managed/UnityEditor.dll</HintPath>
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -144,80 +144,84 @@
      <None Include="Assets\Extensions\HoloToolKit\HoloToolkit\Utilities\Shaders\UnlitConfigurable.cginc" />
      <None Include="Assets\Extensions\HoloToolKit\HoloToolkit\UI\Shaders\3DTextShader.shader" />
  <Reference Include="Assembly-UnityScript">
- <HintPath>C:/BNJMO/Personal Training/HoloRPG/holorpg/Library/ScriptAssemblies/Assembly-UnityScript.dll</HintPath>
+ <HintPath>C:/BNJMO/Personal Training/HoloRPG/HoloRPG (Github)/Library/ScriptAssemblies/Assembly-UnityScript.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.Advertisements">
- <HintPath>C:/Program Files/Unity (5.6)/Editor/Data/UnityExtensions/Unity/Advertisements/Editor/UnityEditor.Advertisements.dll</HintPath>
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Advertisements/Editor/UnityEditor.Advertisements.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
- <HintPath>C:/Program Files/Unity (5.6)/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.UI">
- <HintPath>C:/Program Files/Unity (5.6)/Editor/Data/UnityExtensions/Unity/GUISystem/Editor/UnityEditor.UI.dll</HintPath>
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/Editor/UnityEditor.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Networking">
- <HintPath>C:/Program Files/Unity (5.6)/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.Networking">
- <HintPath>C:/Program Files/Unity (5.6)/Editor/Data/UnityExtensions/Unity/Networking/Editor/UnityEditor.Networking.dll</HintPath>
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/Editor/UnityEditor.Networking.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.TestRunner">
- <HintPath>C:/Program Files/Unity (5.6)/Editor/Data/UnityExtensions/Unity/TestRunner/Editor/UnityEditor.TestRunner.dll</HintPath>
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/Editor/UnityEditor.TestRunner.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.TestRunner">
- <HintPath>C:/Program Files/Unity (5.6)/Editor/Data/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll</HintPath>
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll</HintPath>
  </Reference>
  <Reference Include="nunit.framework">
- <HintPath>C:/Program Files/Unity (5.6)/Editor/Data/UnityExtensions/Unity/TestRunner/nunit.framework.dll</HintPath>
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/nunit.framework.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.TreeEditor">
- <HintPath>C:/Program Files/Unity (5.6)/Editor/Data/UnityExtensions/Unity/TreeEditor/Editor/UnityEditor.TreeEditor.dll</HintPath>
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/TreeEditor/Editor/UnityEditor.TreeEditor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Analytics">
- <HintPath>C:/Program Files/Unity (5.6)/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.Analytics">
- <HintPath>C:/Program Files/Unity (5.6)/Editor/Data/UnityExtensions/Unity/UnityAnalytics/Editor/UnityEditor.Analytics.dll</HintPath>
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/Editor/UnityEditor.Analytics.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.HoloLens">
- <HintPath>C:/Program Files/Unity (5.6)/Editor/Data/UnityExtensions/Unity/UnityHoloLens/Editor/UnityEditor.HoloLens.dll</HintPath>
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityHoloLens/Editor/UnityEditor.HoloLens.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.HoloLens">
- <HintPath>C:/Program Files/Unity (5.6)/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.Purchasing">
- <HintPath>C:/Program Files/Unity (5.6)/Editor/Data/UnityExtensions/Unity/UnityPurchasing/Editor/UnityEditor.Purchasing.dll</HintPath>
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityPurchasing/Editor/UnityEditor.Purchasing.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.VR">
- <HintPath>C:/Program Files/Unity (5.6)/Editor/Data/UnityExtensions/Unity/UnityVR/Editor/UnityEditor.VR.dll</HintPath>
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityVR/Editor/UnityEditor.VR.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.VR">
- <HintPath>C:/Program Files/Unity (5.6)/Editor/Data/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll</HintPath>
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.Graphs">
- <HintPath>C:/Program Files/Unity (5.6)/Editor/Data/Managed/UnityEditor.Graphs.dll</HintPath>
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.Graphs.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.Android.Extensions">
- <HintPath>C:/Program Files/Unity (5.6)/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll</HintPath>
+ <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.WSA.Extensions">
- <HintPath>C:/Program Files/Unity (5.6)/Editor/Data/PlaybackEngines/MetroSupport/UnityEditor.WSA.Extensions.dll</HintPath>
+ <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/MetroSupport/UnityEditor.WSA.Extensions.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.WindowsStandalone.Extensions">
- <HintPath>C:/Program Files/Unity (5.6)/Editor/Data/PlaybackEngines/windowsstandalonesupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
+ <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/windowsstandalonesupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
  </Reference>
  <Reference Include="GETween">
- <HintPath>C:/BNJMO/Personal Training/HoloRPG/holorpg/Assets/GUI Animator/Common/Plugins/GETween.dll</HintPath>
+ <HintPath>C:/BNJMO/Personal Training/HoloRPG/HoloRPG (Github)/Assets/GUI Animator/Common/Plugins/GETween.dll</HintPath>
  </Reference>
  <Reference Include="GUIAnimatorFREE">
- <HintPath>C:/BNJMO/Personal Training/HoloRPG/holorpg/Assets/GUI Animator/GUI Animator FREE/Plugins/GUIAnimatorFREE.dll</HintPath>
+ <HintPath>C:/BNJMO/Personal Training/HoloRPG/HoloRPG (Github)/Assets/GUI Animator/GUI Animator FREE/Plugins/GUIAnimatorFREE.dll</HintPath>
  </Reference>
  <Reference Include="Newtonsoft.Json">
- <HintPath>C:/BNJMO/Personal Training/HoloRPG/holorpg/Assets/Plugins/JsonNet/Newtonsoft.Json.dll</HintPath>
+ <HintPath>C:/BNJMO/Personal Training/HoloRPG/HoloRPG (Github)/Assets/Plugins/JsonNet/Newtonsoft.Json.dll</HintPath>
  </Reference>
  <Reference Include="Mono.Cecil">
- <HintPath>C:/Program Files/Unity (5.6)/Editor/Data/Managed/Mono.Cecil.dll</HintPath>
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/Mono.Cecil.dll</HintPath>
  </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp.csproj">
+      <Project>{9D688320-9D3D-CB0C-83DE-5A487E86E812}</Project>      <Name>Assembly-CSharp</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

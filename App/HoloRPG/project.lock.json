@@ -15774,14 +15774,14 @@
     "UAP,Version=v10.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Dj_BN\\.nuget\\packages\\": {}
+    "C:\\Users\\BNJMO\\.nuget\\packages\\": {}
   },
   "project": {
     "restore": {
-      "projectUniqueName": "C:\\BNJMO\\Personal Training\\HoloRPG\\holorpg\\App\\HoloRPG\\HoloRPG.csproj",
+      "projectUniqueName": "C:\\BNJMO\\Personal Training\\HoloRPG\\HoloRPG (Github)\\App\\HoloRPG\\HoloRPG.csproj",
       "projectName": "HoloRPG",
-      "projectPath": "C:\\BNJMO\\Personal Training\\HoloRPG\\holorpg\\App\\HoloRPG\\HoloRPG.csproj",
-      "projectJsonPath": "C:\\BNJMO\\Personal Training\\HoloRPG\\holorpg\\App\\HoloRPG\\project.json",
+      "projectPath": "C:\\BNJMO\\Personal Training\\HoloRPG\\HoloRPG (Github)\\App\\HoloRPG\\HoloRPG.csproj",
+      "projectJsonPath": "C:\\BNJMO\\Personal Training\\HoloRPG\\HoloRPG (Github)\\App\\HoloRPG\\project.json",
       "projectStyle": "ProjectJson"
     },
     "dependencies": {

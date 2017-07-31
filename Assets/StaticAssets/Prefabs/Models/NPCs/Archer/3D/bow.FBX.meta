@@ -3,7 +3,17 @@ guid: b33d575d817bebe43ad9a03990546f92
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
+    100000: //RootNode
+    100002: bow
+    100004: bowStringHand
+    100006: bowStringRoot
+    400000: //RootNode
+    400002: bow
+    400004: bowStringHand
+    400006: bowStringRoot
     4300000: bow
+    11100000: //RootNode
+    13700000: bow
   materials:
     importMaterials: 1
     materialName: 3
@@ -14,6 +24,8 @@ ModelImporter:
     resampleCurves: 1
     optimizeGameObjects: 0
     motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
     animationImportErrors: 
     animationImportWarnings: 
     animationRetargetingWarnings: 

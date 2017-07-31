@@ -6,7 +6,7 @@
 # Write a line equal to 'keep-all' (without quotes) to keep files regardless their modification (preserved accross builds)
 # Default behavior is to never overwrite files
 HoloRPG.sln: 7CCCC0F329B60185A9DF928978F0C400
-HoloRPG\App.cs: 8BFDAC60629F6D69408981B136FB7818
+HoloRPG\App.cs: modified
 HoloRPG\HoloRPG.csproj: 7F9D439E398BE16BD541230D2B9F6C6A
 HoloRPG\HoloRPG.csproj.user: modified
 HoloRPG\Package.appxmanifest: 2FDAD9AC65F74734F9BD32CD04625BC3
@@ -24,5 +24,5 @@ HoloRPG\bin\x86\Release\AppX\Assets\Square44x44Logo.targetsize-24_altform-unplat
 HoloRPG\bin\x86\Release\AppX\Assets\StoreLogo.png: 90BD194CA4A7CFFF3E8B8222229857FB
 HoloRPG\bin\x86\Release\AppX\Assets\Wide310x150Logo.scale-200.png: C96846A80DF667F87355569CD816192D
 HoloRPG\bin\x86\Release\AppX\Properties\Default.rd.xml: 72EB282657164E79A1C42F6240984826
-HoloRPG\Properties\AssemblyInfo.cs: 15E2A1BE3D9D4DA53727898F8E04A50A
+HoloRPG\Properties\AssemblyInfo.cs: modified
 HoloRPG\Properties\Default.rd.xml: 72EB282657164E79A1C42F6240984826
