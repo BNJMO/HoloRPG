@@ -1,9 +1,9 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HoloRPG (Github)", "Assembly-CSharp.csproj", "{9D688320-9D3D-CB0C-83DE-5A487E86E812}"
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2017
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HoloRPG (github)", "HoloRPG (github).csproj", "{D6D0CE56-87D5-AB30-3026-21F141554DC7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HoloRPG (Github)", "Assembly-CSharp-Editor.csproj", "{AED58E75-AFC3-916F-9106-D669A84B615B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HoloRPG (github).Editor", "HoloRPG (github).Editor.csproj", "{7ED3ED89-D1D9-8FCE-7B07-72997C51357D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,19 +11,16 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{9D688320-9D3D-CB0C-83DE-5A487E86E812}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9D688320-9D3D-CB0C-83DE-5A487E86E812}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9D688320-9D3D-CB0C-83DE-5A487E86E812}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9D688320-9D3D-CB0C-83DE-5A487E86E812}.Release|Any CPU.Build.0 = Release|Any CPU
-		{AED58E75-AFC3-916F-9106-D669A84B615B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{AED58E75-AFC3-916F-9106-D669A84B615B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{AED58E75-AFC3-916F-9106-D669A84B615B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{AED58E75-AFC3-916F-9106-D669A84B615B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6D0CE56-87D5-AB30-3026-21F141554DC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6D0CE56-87D5-AB30-3026-21F141554DC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6D0CE56-87D5-AB30-3026-21F141554DC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6D0CE56-87D5-AB30-3026-21F141554DC7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7ED3ED89-D1D9-8FCE-7B07-72997C51357D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7ED3ED89-D1D9-8FCE-7B07-72997C51357D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7ED3ED89-D1D9-8FCE-7B07-72997C51357D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7ED3ED89-D1D9-8FCE-7B07-72997C51357D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = Assembly-CSharp.csproj
 	EndGlobalSection
 EndGlobal
