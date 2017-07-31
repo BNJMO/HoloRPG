@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2017
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "holorpg", "holorpg.csproj", "{8B724FF0-95CF-E042-EC13-1DB10E162BE5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HoloRPG", "HoloRPG.csproj", "{34155251-B81A-168C-76D3-726D2A47E8EC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "holorpg.Editor", "holorpg.Editor.csproj", "{716CBDD8-E813-BAB3-C2F8-9F0EEAB80437}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HoloRPG.Editor", "HoloRPG.Editor.csproj", "{A900094F-0A08-7AA7-618F-65972C58DA9D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,14 +11,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{8B724FF0-95CF-E042-EC13-1DB10E162BE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8B724FF0-95CF-E042-EC13-1DB10E162BE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8B724FF0-95CF-E042-EC13-1DB10E162BE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8B724FF0-95CF-E042-EC13-1DB10E162BE5}.Release|Any CPU.Build.0 = Release|Any CPU
-		{716CBDD8-E813-BAB3-C2F8-9F0EEAB80437}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{716CBDD8-E813-BAB3-C2F8-9F0EEAB80437}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{716CBDD8-E813-BAB3-C2F8-9F0EEAB80437}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{716CBDD8-E813-BAB3-C2F8-9F0EEAB80437}.Release|Any CPU.Build.0 = Release|Any CPU
+		{34155251-B81A-168C-76D3-726D2A47E8EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34155251-B81A-168C-76D3-726D2A47E8EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34155251-B81A-168C-76D3-726D2A47E8EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34155251-B81A-168C-76D3-726D2A47E8EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A900094F-0A08-7AA7-618F-65972C58DA9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A900094F-0A08-7AA7-618F-65972C58DA9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A900094F-0A08-7AA7-618F-65972C58DA9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A900094F-0A08-7AA7-618F-65972C58DA9D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

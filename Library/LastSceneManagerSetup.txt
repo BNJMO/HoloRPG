@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/Playgrounds/AnchorTest.unity
+- path: Assets/Extensions/Holotour/Scenes/Main - Edit Mode.unity
   isLoaded: 1
   isActive: 1
