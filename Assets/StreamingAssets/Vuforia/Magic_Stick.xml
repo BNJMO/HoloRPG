@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig>
+    <Tracking>
+        <ImageTarget name="Cache_PC" size="40.000000 28.799387"/>
+        <ImageTarget name="Big_Marker" size="20.000000 20.027779"/>
+        <ImageTarget name="card_2" size="1.000000 1.373219"/>
+        <ImageTarget name="card_1" size="1.000000 1.324905"/>
+        <ImageTarget name="Magic_Stick_2" size="0.200000 0.251256"/>
+        <ImageTarget name="resident-evil-7-biohazard-playstation-4" size="0.200000 0.251309"/>
+        <ImageTarget name="sword_cube.Bottom" size="0.150000 0.150000"/>
+        <ImageTarget name="sword_cube.Top" size="0.150000 0.150000"/>
+        <ImageTarget name="sword_cube.Front" size="0.150000 0.150000"/>
+        <ImageTarget name="sword_cube.Right" size="0.150000 0.150000"/>
+        <ImageTarget name="sword_cube.Left" size="0.150000 0.150000"/>
+        <ImageTarget name="sword_cube.Back" size="0.150000 0.150000"/>
+        <MultiTarget name="sword_cube">
+            <Part name="sword_cube.Left" translation="-0.07500000298023224 0 0" rotation="AD: 0 1 0 -90"/>
+            <Part name="sword_cube.Right" translation="0.07500000298023224 0 0" rotation="AD: 0 1 0 90"/>
+            <Part name="sword_cube.Front" translation="0 0 0.07500000298023224" rotation="AD: 1 0 0 0"/>
+            <Part name="sword_cube.Back" translation="0 0 -0.07500000298023224" rotation="AD: 0 1 0 180"/>
+            <Part name="sword_cube.Top" translation="0 0.07500000298023224 0" rotation="AD: 1 0 0 -90"/>
+            <Part name="sword_cube.Bottom" translation="0 -0.07500000298023224 0" rotation="AD: 1 0 0 90"/>
+        </MultiTarget>
+    </Tracking>
+</QCARConfig>
