@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 /// Globally accessible Singleton class that allows to interact with the Application's state.
 /// Copyright (c) BNJMO 2017
 /// </summary>
-public class ApplicationStateManager : HoloToolkit.Unity.Singleton<ApplicationStateManager>, IKeywordCommandProvider
+public class ApplicationStateManager : Singleton<ApplicationStateManager>, IKeywordCommandProvider
 {
     public enum EAppState { USER_MODE = 0, EDIT_MODE = 1 }
 
@@ -77,10 +77,10 @@ public class ApplicationStateManager : HoloToolkit.Unity.Singleton<ApplicationSt
 
         Condition condUserMode = Condition.New(() => ApplicationStateManager.IsUserMode);
         
-        result.Add(new KeywordCommand(() => { LoadEditModeScene(); }, Condition.TRUE,     "Set Edit Mode", KeyCode.Alpha1));
-        result.Add(new KeywordCommand(() => { LoadUserModeScene(); }, Condition.TRUE,     "Set User Mode", KeyCode.Alpha2));
+        result.Add(new KeywordCommand(() => { LoadEditModeScene(); }, Condition.TRUE,       "Set Edit Mode",    KeyCode.Alpha1));
+        result.Add(new KeywordCommand(() => { LoadUserModeScene(); }, Condition.TRUE,       "Set User Mode",    KeyCode.Alpha2));
 
-        result.Add(new KeywordCommand(() => {ReloadCurrentScene(); }, condUserMode,                  "Reload Experience", KeyCode.Alpha5));
+        result.Add(new KeywordCommand(() => {ReloadCurrentScene(); }, condUserMode,         "Reload Game",      KeyCode.Alpha5));
 
  		return result;
 	}

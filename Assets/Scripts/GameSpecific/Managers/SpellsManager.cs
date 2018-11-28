@@ -2,7 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.VR.WSA.Input;
+using UnityEngine.XR.WSA.Input;
 
 
 public enum SpellType
@@ -16,7 +16,7 @@ public enum SpellType
 
    // TODO Bind with UI
 
-public class SpellsManager : HoloToolkit.Unity.Singleton<SpellsManager>, IKeywordCommandProvider
+public class SpellsManager : Singleton<SpellsManager>, IKeywordCommandProvider
 {
 
     public float RelativePower { get { return GetPowerRechargeProgression(); } }
@@ -85,11 +85,11 @@ public class SpellsManager : HoloToolkit.Unity.Singleton<SpellsManager>, IKeywor
 
 
         // Gesture
-        InteractionManager.SourcePressed += InteractionManager_SourcePressed;
-        InteractionManager.SourceReleased += InteractionManager_SourceReleased;
-        InteractionManager.SourceDetected += InteractionManager_SourceDetected;
-        InteractionManager.SourceUpdated += InteractionManager_SourceUpdated;
-        InteractionManager.SourceLost += InteractionManager_SourceLost;
+        InteractionManager.InteractionSourcePressed += InteractionManager_SourcePressed;
+        InteractionManager.InteractionSourceReleased += InteractionManager_SourceReleased;
+        InteractionManager.InteractionSourceDetected += InteractionManager_SourceDetected;
+        InteractionManager.InteractionSourceUpdated += InteractionManager_SourceUpdated;
+        InteractionManager.InteractionSourceLost += InteractionManager_SourceLost;
 
         GameManger.Instance.ItemCollected += OnItemCollected;
         
@@ -149,28 +149,28 @@ public class SpellsManager : HoloToolkit.Unity.Singleton<SpellsManager>, IKeywor
     }
     
 
-    private void InteractionManager_SourcePressed(InteractionSourceState state)
+    private void InteractionManager_SourcePressed(InteractionSourcePressedEventArgs eventInfo)
     {
         timeSinceLastPress = Time.time;
     }
 
-    private void InteractionManager_SourceReleased(InteractionSourceState state)
+    private void InteractionManager_SourceReleased(InteractionSourceReleasedEventArgs eventInfo)
     {
         Fire();
     }
 
-    private void InteractionManager_SourceDetected(InteractionSourceState state)
+    private void InteractionManager_SourceDetected(InteractionSourceDetectedEventArgs eventInfo)
     {
-        state.properties.location.TryGetPosition(out handPosition);
+        eventInfo.state.sourcePose.TryGetPosition(out handPosition);
         ShowHand();
     }
 
-    private void InteractionManager_SourceUpdated(InteractionSourceState state)
+    private void InteractionManager_SourceUpdated(InteractionSourceUpdatedEventArgs eventInfo)
     {
-        state.properties.location.TryGetPosition(out handPosition);
+        eventInfo.state.sourcePose.TryGetPosition(out handPosition);
     }
 
-    private void InteractionManager_SourceLost(InteractionSourceState state)
+    private void InteractionManager_SourceLost(InteractionSourceLostEventArgs eventInfo)
     {
         HideHand();
     }
@@ -210,7 +210,7 @@ public class SpellsManager : HoloToolkit.Unity.Singleton<SpellsManager>, IKeywor
     public List<KeywordCommand> GetSpeechCommands()
     {
         List<KeywordCommand> result = new List<KeywordCommand>();
-        Condition condIsUserMode = Condition.New(() => GameManger.Instance.IsInUserMode == true);
+        Condition condIsUserMode = Condition.New(() => ApplicationStateManager.IsUserMode == true);
         Condition condFireNotEmpty = Condition.New(() => fire_Spells.Count != 0);
         Condition condIceNotEmpty = Condition.New(() => ice_Spells.Count != 0);
         Condition condRockNotEmpty = Condition.New(() => rock_Spells.Count != 0);

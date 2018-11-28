@@ -7,7 +7,7 @@ using System;
 /// <summary>
 /// Keyword command manager. Its responsible for detecting spoken keywords and executing the corresponding actions.
 /// </summary>
-public class KeywordCommandManager : HoloToolkit.Unity.Singleton<KeywordCommandManager>
+public class KeywordCommandManager : Singleton<KeywordCommandManager>
 {
    
     private class KeywordCommandManagerCommands : IKeywordCommandProvider

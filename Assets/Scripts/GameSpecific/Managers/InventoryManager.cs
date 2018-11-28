@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 
-public class InventoryManager : HoloToolkit.Unity.Singleton<InventoryManager> {
+public class InventoryManager : Singleton<InventoryManager> {
 
 
     private AbstractItem[] allItems;

@@ -1,9 +1,9 @@
 ﻿using UnityEngine;
-using UnityEngine.VR.WSA.Input;
+
 
 public interface IAirtapable
 {
-    void OnTap(InteractionSourceKind source, int tapCount, Ray headRay);
-    void OnHoldStart(InteractionSourceKind source, Ray headRay);
-    void OnHoldFinish(InteractionSourceKind source, Ray headRay);
+    void OnTap(UnityEngine.XR.WSA.Input.InteractionSourceKind source, int tapCount, Ray headRay);
+    void OnHoldStart(UnityEngine.XR.WSA.Input.InteractionSourceKind source, Ray headRay);
+    void OnHoldFinish(UnityEngine.XR.WSA.Input.InteractionSourceKind source, Ray headRay);
 }

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 
-public class QuestManager : HoloToolkit.Unity.Singleton<QuestManager> {
+public class QuestManager : Singleton<QuestManager> {
 
     // accepted quest instances
     private List<IQuest> acceptedQuests;

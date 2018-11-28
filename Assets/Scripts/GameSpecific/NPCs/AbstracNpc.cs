@@ -71,7 +71,7 @@ public abstract class AbstracNpc : PoiAnchor, INpc, IKeywordCommandProvider {
     {
         base.Update();
 
-        if (GameManger.Instance.IsInUserMode == true)
+        if (ApplicationStateManager.IsUserMode == true)
         {
             if (PlayerInRange == true)
             {
@@ -136,7 +136,7 @@ public abstract class AbstracNpc : PoiAnchor, INpc, IKeywordCommandProvider {
     public List<KeywordCommand> GetSpeechCommands()
     {
         List<KeywordCommand> result = new List<KeywordCommand>();
-        Condition condIsUserMode    = Condition.New(() => GameManger.Instance.IsInUserMode == true);
+        Condition condIsUserMode    = Condition.New(() => ApplicationStateManager.IsUserMode == true);
         Condition condPlayerInRange = Condition.New(() => PlayerInRange == true);
         Condition condIsNotTalking  = Condition.New(() => isTalking == false);
         Condition condYesNoQuestion = Condition.New(() => isWaitingForAnswer == true); // REPLACE WITH == !!!! (only for testing purpose)

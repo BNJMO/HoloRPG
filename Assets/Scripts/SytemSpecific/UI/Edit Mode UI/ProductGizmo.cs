@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.VR.WSA;
+
 
 public class ProductGizmo : AnchorGizmo {
 
@@ -15,9 +15,9 @@ public class ProductGizmo : AnchorGizmo {
         }
         set
         {
-            DestroyImmediate(GetComponent<WorldAnchor>());
+            DestroyImmediate(GetComponent<UnityEngine.XR.WSA.WorldAnchor>());
             transform.position = value;
-            gameObject.AddComponent<WorldAnchor>();
+            gameObject.AddComponent<UnityEngine.XR.WSA.WorldAnchor>();
         }
     }
 
@@ -30,9 +30,9 @@ public class ProductGizmo : AnchorGizmo {
 
         set
         {
-            DestroyImmediate(GetComponent<WorldAnchor>());
+            DestroyImmediate(GetComponent<UnityEngine.XR.WSA.WorldAnchor>());
             transform.rotation = value;
-            gameObject.AddComponent<WorldAnchor>();
+            gameObject.AddComponent<UnityEngine.XR.WSA.WorldAnchor>();
         }
     }
 

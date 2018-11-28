@@ -1,6 +1,6 @@
 ﻿using System;
 using UnityEngine;
-using UnityEngine.VR.WSA;
+
 
 public class EntertainmentAnchor : PoiAnchor
 {

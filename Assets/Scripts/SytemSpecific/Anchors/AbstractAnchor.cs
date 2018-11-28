@@ -1,6 +1,6 @@
 ﻿using System;
 using UnityEngine;
-using UnityEngine.VR.WSA;
+
 
 public abstract class AbstractAnchor : MonoBehaviour, IAnchor, IGazeable
 {
@@ -15,18 +15,18 @@ public abstract class AbstractAnchor : MonoBehaviour, IAnchor, IGazeable
     public Vector3 AnchorPosition { get { return transform.position; }
         set
         {
-            DestroyImmediate(gameObject.GetComponent<WorldAnchor>());
+            DestroyImmediate(gameObject.GetComponent<UnityEngine.XR.WSA.WorldAnchor>());
             transform.position = value;
-            gameObject.AddComponent<WorldAnchor>();
+            gameObject.AddComponent<UnityEngine.XR.WSA.WorldAnchor>();
         }
     }
 
     public Quaternion AnchorRotation { get { return transform.rotation; }
         set
         {
-            DestroyImmediate(gameObject.GetComponent<WorldAnchor>());
+            DestroyImmediate(gameObject.GetComponent<UnityEngine.XR.WSA.WorldAnchor>());
             transform.rotation = value;
-            gameObject.AddComponent<WorldAnchor>();
+            gameObject.AddComponent<UnityEngine.XR.WSA.WorldAnchor>();
         }
     }
 

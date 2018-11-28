@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class DebugLogFor3D : HoloToolkit.Unity.Singleton<DebugLogFor3D>
+public class DebugLogFor3D : Singleton<DebugLogFor3D>
 {
     private TextMesh myUIText;
     private string myText;

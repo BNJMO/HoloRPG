@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class UIManager : HoloToolkit.Unity.Singleton<UIManager>, IKeywordCommandProvider {
+public class UIManager : Singleton<UIManager>, IKeywordCommandProvider {
 
     [SerializeField] private Panel mainUIPanel;
     [SerializeField] private Radar mapRadar;
@@ -85,7 +85,7 @@ public class UIManager : HoloToolkit.Unity.Singleton<UIManager>, IKeywordCommand
     public List<KeywordCommand> GetSpeechCommands()
     {
         List<KeywordCommand> result = new List<KeywordCommand>();
-        Condition condIsUserMode = Condition.New(() => GameManger.Instance.IsInUserMode == true);
+        Condition condIsUserMode = Condition.New(() => ApplicationStateManager.IsUserMode == true);
 
 
         result.Add(new KeywordCommand(() => { ShowQuests(); }, condIsUserMode, "Show Quests", KeyCode.Q));

@@ -102,7 +102,7 @@ public abstract class AbstractEnemy : PoiAnchor, IEnemy {
     {
         base.Update();
 
-        if (GameManger.Instance.IsInUserMode == true)
+        if (ApplicationStateManager.IsUserMode == true)
         {
             switch(state)
             {

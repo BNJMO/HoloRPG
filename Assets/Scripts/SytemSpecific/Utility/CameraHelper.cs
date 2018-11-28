@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-public class CameraHelper : HoloToolkit.Unity.Singleton<CameraHelper>
+public class CameraHelper : Singleton<CameraHelper>
 {
 
     public struct UserStats

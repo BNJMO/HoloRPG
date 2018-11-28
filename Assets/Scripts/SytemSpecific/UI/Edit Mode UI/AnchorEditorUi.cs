@@ -2,7 +2,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.VR.WSA.Input;
+using UnityEngine.XR.WSA.Input;
+
 
 /// <summary>
 /// Visual feedback and manager for placing anchors in edit mode.
@@ -10,7 +11,7 @@ using UnityEngine.VR.WSA.Input;
 /// TODO: Simplify process
 /// 
 /// </summary>
-public class AnchorEditorUi : HoloToolkit.Unity.Singleton<AnchorEditorUi>, IKeywordCommandProvider
+public class AnchorEditorUi : Singleton<AnchorEditorUi>, IKeywordCommandProvider
 {
 
     private enum Mode
@@ -55,7 +56,7 @@ public class AnchorEditorUi : HoloToolkit.Unity.Singleton<AnchorEditorUi>, IKeyw
     public bool IsGazedAnchorNPC {get; set; }
 
     
-    void Start () {
+    private void Start () {
         anchorManager = AnchorManager.Instance;
         appStateManager = ApplicationStateManager.Instance;
 
@@ -63,19 +64,20 @@ public class AnchorEditorUi : HoloToolkit.Unity.Singleton<AnchorEditorUi>, IKeyw
 
         CreateAnchorGizmo();
 
-        InteractionManager.SourcePressed += InteractionManager_SourcePressed;
-        InteractionManager.SourceReleased += InteractionManager_SourceReleased;
+        InteractionManager.InteractionSourcePressed += InteractionManager_SourcePressed;
+        InteractionManager.InteractionSourceReleased += InteractionManager_SourceReleased;
 
         KeywordCommandManager.Instance.AddKeywordCommandProvider(this);
     }
 
-    void Update()
+
+    private void Update()
     {
         UpdateUi();
     }
 
 
-    void UpdateUi()
+    private void UpdateUi()
     {
         if (mode == Mode.ANCHOR_PLACING)
         {
@@ -88,18 +90,18 @@ public class AnchorEditorUi : HoloToolkit.Unity.Singleton<AnchorEditorUi>, IKeyw
     }
 
     // from Interaction Manager
-   private void InteractionManager_SourcePressed(InteractionSourceState state)
+   private void InteractionManager_SourcePressed(InteractionSourcePressedEventArgs eventInfo)
     {
-        if ((state.source.kind == InteractionSourceKind.Controller) && (GazedAnchor != null))
+        if ((eventInfo.state.source.kind == InteractionSourceKind.Controller) && (GazedAnchor != null))
         {
             Notify.Beep();
             GrabGazedAnchor();
         }
     }
 
-    private void InteractionManager_SourceReleased(InteractionSourceState state)
+    private void InteractionManager_SourceReleased(InteractionSourceReleasedEventArgs eventInfo)
     {
-        if (state.source.kind == InteractionSourceKind.Controller)
+        if (eventInfo.state.source.kind == InteractionSourceKind.Controller)
         {
             Notify.Beep();
             ReleaseGazedAnchor();

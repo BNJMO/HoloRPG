@@ -64,7 +64,7 @@ public class ElderGods : MonoBehaviour, IKeywordCommandProvider {
     public List<KeywordCommand> GetSpeechCommands()
     {
         List<KeywordCommand> result = new List<KeywordCommand>();
-        Condition condIsUserMode = Condition.New(() => GameManger.Instance.IsInUserMode == true);
+        Condition condIsUserMode = Condition.New(() => ApplicationStateManager.IsUserMode == true);
 
 
         result.Add(new KeywordCommand(() => { Disappear(); }, condIsUserMode, "Shut Up", KeyCode.F));

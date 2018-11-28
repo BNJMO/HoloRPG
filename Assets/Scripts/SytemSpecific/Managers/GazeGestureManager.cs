@@ -1,11 +1,11 @@
 ﻿using UnityEngine;
-using UnityEngine.VR.WSA.Input;
+
 
 //FIXME @Dominik: Die Anchor-Funktionalität funktioniert nicht.
 // Außerdem soll dieser Manager ja generisch sein. Implementiere die
 // Anchor-Funktionalität bitte in den IGazeables oder IAirtapables.
 // Funktioniert nach einigen Tests nicht anständig. 
-public class GazeGestureManager :  HoloToolkit.Unity.Singleton<GazeGestureManager>
+public class GazeGestureManager :  Singleton<GazeGestureManager>
 {
 	private AnchorManager anchorManager;
 
@@ -18,7 +18,7 @@ public class GazeGestureManager :  HoloToolkit.Unity.Singleton<GazeGestureManage
     private IGazeable oldGaze;
 
     // Gestures & Input
-	public GestureRecognizer recognizer;
+	public UnityEngine.XR.WSA.Input.GestureRecognizer recognizer;
 
     private IAirtapable tapable;
 
@@ -29,7 +29,7 @@ public class GazeGestureManager :  HoloToolkit.Unity.Singleton<GazeGestureManage
     {
         base.Awake();
         // Set up a GestureRecognizer to detect Select gestures.
-		recognizer = new GestureRecognizer();
+		recognizer = new UnityEngine.XR.WSA.Input.GestureRecognizer();
 		recognizer.StartCapturingGestures();
     }
 
@@ -77,17 +77,17 @@ public class GazeGestureManager :  HoloToolkit.Unity.Singleton<GazeGestureManage
 		oldGaze = newGaze;
     }
 
-    private void GestureRecognizer_HandleHoldStart(InteractionSourceKind source, Ray headRay)
+    private void GestureRecognizer_HandleHoldStart(UnityEngine.XR.WSA.Input.InteractionSourceKind source, Ray headRay)
     {
-        if (source == InteractionSourceKind.Controller)
+        if (source == UnityEngine.XR.WSA.Input.InteractionSourceKind.Controller)
         {
             IsHolding = true;
         }
     }
 
-    private void GestureRecognizer_HandleHoldFinish(InteractionSourceKind source, Ray headRay)
+    private void GestureRecognizer_HandleHoldFinish(UnityEngine.XR.WSA.Input.InteractionSourceKind source, Ray headRay)
     {
-        if (source == InteractionSourceKind.Controller)
+        if (source == UnityEngine.XR.WSA.Input.InteractionSourceKind.Controller)
         {
             IsHolding = false;
         }    

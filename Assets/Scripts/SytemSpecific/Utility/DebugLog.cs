@@ -1,6 +1,6 @@
 ﻿using UnityEngine.UI;
 
-public class DebugLog : HoloToolkit.Unity.Singleton<DebugLog>
+public class DebugLog : Singleton<DebugLog>
 {
     private Text myUIText;
     private string myText;
