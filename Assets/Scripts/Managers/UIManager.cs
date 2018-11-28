@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class UIManager : HoloToolkit.Unity.Singleton<UIManager>, IKeywordCommandProvider {
+public class UIManager : Singleton<UIManager>, IKeywordCommandProvider {
 
     [SerializeField] private Panel mainUIPanel;
 	[SerializeField] private LifeBar playerHPBar;

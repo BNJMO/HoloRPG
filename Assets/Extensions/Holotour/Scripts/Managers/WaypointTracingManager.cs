@@ -5,7 +5,7 @@ using UnityEngine;
 /// <summary>
 /// Manager for automatic waypoint tracing in edit mode.
 /// </summary>
-public class WaypointTracingManager : HoloToolkit.Unity.Singleton<WaypointTracingManager>//, IKeywordCommandProvider
+public class WaypointTracingManager : Singleton<WaypointTracingManager>//, IKeywordCommandProvider
 {
 	/*private AnchorManager anchorManager;
 

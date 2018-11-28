@@ -1,16 +1,16 @@
 ﻿using UnityEngine;
 using System;
-using UnityEngine.VR.WSA.Persistence;
-using UnityEngine.VR.WSA;
+
+
 using System.Collections.Generic;
 using System.Text.RegularExpressions;
 
-public class GamePersistenceManager : HoloToolkit.Unity.Singleton<GamePersistenceManager>, IKeywordCommandProvider
+public class GamePersistenceManager : Singleton<GamePersistenceManager>, IKeywordCommandProvider
 {
 	private const string filename = "game_savedstate";
 
 	private AnchorManager anchorManager;
-	private WorldAnchorStore worldAnchorStore;
+	private UnityEngine.XR.WSA.Persistence.WorldAnchorStore worldAnchorStore;
 
 	private bool pendingSaveAttempt;
 	private bool pendingLoadAttempt;
@@ -28,7 +28,7 @@ public class GamePersistenceManager : HoloToolkit.Unity.Singleton<GamePersistenc
     private void Start()
     {
 		KeywordCommandManager.Instance.AddKeywordCommandProvider (this);
-		WorldAnchorStore.GetAsync(OnStoreReady);
+		UnityEngine.XR.WSA.Persistence.WorldAnchorStore.GetAsync(OnStoreReady);
 		anchorManager = AnchorManager.Instance;
 #if UNITY_EDITOR
         isEditorMode = true;
@@ -69,7 +69,7 @@ public class GamePersistenceManager : HoloToolkit.Unity.Singleton<GamePersistenc
         }
     }
 
-    private void OnStoreReady(WorldAnchorStore store) {
+    private void OnStoreReady(UnityEngine.XR.WSA.Persistence.WorldAnchorStore store) {
 		this.worldAnchorStore = store;
 		if (pendingSaveAttempt) {
 			SaveGameState ();
@@ -101,7 +101,7 @@ public class GamePersistenceManager : HoloToolkit.Unity.Singleton<GamePersistenc
 				worldAnchorStore.Clear ();
 				foreach (IAnchor a in anchors)
 				{
-					worldAnchorStore.Save ("" + anchorManager.GetIndexOf (a), a.GameObject.GetComponent<WorldAnchor> ());
+					worldAnchorStore.Save ("" + anchorManager.GetIndexOf (a), a.GameObject.GetComponent<UnityEngine.XR.WSA.WorldAnchor> ());
 				}
 			}
         }
@@ -142,7 +142,7 @@ public class GamePersistenceManager : HoloToolkit.Unity.Singleton<GamePersistenc
 
 			// attach worldAnchorStore anchor
 			if (!isEditorMode) {
-				DestroyImmediate (a.GameObject.GetComponent<WorldAnchor> ());
+				DestroyImmediate (a.GameObject.GetComponent<UnityEngine.XR.WSA.WorldAnchor> ());
 				worldAnchorStore.Load ("" + anchorState.anchorIndex, a.GameObject);
 			} else {
 				// Setting the position is only usefull in edit mode.

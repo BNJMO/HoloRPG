@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
-using UnityEngine.VR.WSA;
 
-public class SpatialMapping : HoloToolkit.Unity.Singleton<SpatialMapping>
+
+public class SpatialMapping : Singleton<SpatialMapping>
 {
     [HideInInspector]
     public static int PhysicsRaycastMask;
@@ -16,10 +16,10 @@ public class SpatialMapping : HoloToolkit.Unity.Singleton<SpatialMapping>
     private bool mappingEnabled = true;
 
     // Handles rendering of spatial mapping meshes.
-    private SpatialMappingRenderer spatialMappingRenderer;
+    private UnityEngine.XR.WSA.SpatialMappingRenderer spatialMappingRenderer;
 
     // Creates/updates environment colliders to work with physics.
-    private SpatialMappingCollider spatialMappingCollider;
+    private UnityEngine.XR.WSA.SpatialMappingCollider spatialMappingCollider;
 
 	private RaycastHit hitInfo;
 
@@ -39,11 +39,11 @@ public class SpatialMapping : HoloToolkit.Unity.Singleton<SpatialMapping>
             if (drawVisualMeshes)
             {
                 spatialMappingRenderer.visualMaterial = DrawMaterial;
-                spatialMappingRenderer.renderState = SpatialMappingRenderer.RenderState.Visualization;
+                spatialMappingRenderer.renderState = UnityEngine.XR.WSA.SpatialMappingRenderer.RenderState.Visualization;
             }
             else
             {
-                spatialMappingRenderer.renderState = SpatialMappingRenderer.RenderState.None;
+                spatialMappingRenderer.renderState = UnityEngine.XR.WSA.SpatialMappingRenderer.RenderState.None;
             }
         }
     }
@@ -74,9 +74,9 @@ public class SpatialMapping : HoloToolkit.Unity.Singleton<SpatialMapping>
 
     private void Start()
     {
-        spatialMappingRenderer = gameObject.GetComponent<SpatialMappingRenderer>();
+        spatialMappingRenderer = gameObject.GetComponent<UnityEngine.XR.WSA.SpatialMappingRenderer>();
         spatialMappingRenderer.surfaceParent = this.gameObject;
-        spatialMappingCollider = gameObject.GetComponent<SpatialMappingCollider>();
+        spatialMappingCollider = gameObject.GetComponent<UnityEngine.XR.WSA.SpatialMappingCollider>();
         spatialMappingCollider.surfaceParent = this.gameObject;
 		PhysicsRaycastMask = (1 << spatialMappingCollider.layer);
         DrawVisualMeshes = drawVisualMeshes;
@@ -88,9 +88,9 @@ public class SpatialMapping : HoloToolkit.Unity.Singleton<SpatialMapping>
 	/// </summary>
 	public void Restart()
 	{
-		spatialMappingRenderer = gameObject.GetComponent<SpatialMappingRenderer>();
+		spatialMappingRenderer = gameObject.GetComponent<UnityEngine.XR.WSA.SpatialMappingRenderer>();
 		spatialMappingRenderer.surfaceParent = this.gameObject;
-		spatialMappingCollider = gameObject.GetComponent<SpatialMappingCollider>();
+		spatialMappingCollider = gameObject.GetComponent<UnityEngine.XR.WSA.SpatialMappingCollider>();
 		spatialMappingCollider.surfaceParent = this.gameObject;
 		PhysicsRaycastMask = (1 << spatialMappingCollider.layer);
 		DrawVisualMeshes = drawVisualMeshes;

@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 
-public class UpTextCreator : HoloToolkit.Unity.Singleton<UpTextCreator> {
+public class UpTextCreator : Singleton<UpTextCreator> {
 
 
     [SerializeField] private Text damageTextRef;

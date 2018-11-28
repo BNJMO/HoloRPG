@@ -2,9 +2,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.VR.WSA.Input;
+using UnityEngine.XR.WSA.Input;
 
-public class AnchorEditorUi : HoloToolkit.Unity.Singleton<AnchorEditorUi>, IKeywordCommandProvider
+
+public class AnchorEditorUi : Singleton<AnchorEditorUi>, IKeywordCommandProvider
 {
 
     private enum Mode
@@ -70,19 +71,20 @@ public class AnchorEditorUi : HoloToolkit.Unity.Singleton<AnchorEditorUi>, IKeyw
  //       InvalidateUi();
 
 
-        InteractionManager.SourcePressed += InteractionManager_SourcePressed;
-        InteractionManager.SourceReleased += InteractionManager_SourceReleased;
-
+        InteractionManager.InteractionSourcePressed += InteractionManager_InteractionSourcePressed;
+        InteractionManager.InteractionSourceReleased += InteractionManager_InteractionSourceReleased;
 
        /* GestureRecognizer recognizer = GazeGestureManager.Instance.recognizer;
         recognizer.HoldStartedEvent += GestureRecognizer_HandleHoldStart;
         recognizer.HoldCanceledEvent += GestureRecognizer_HandleHoldFinish;
         recognizer.HoldCompletedEvent += GestureRecognizer_HandleHoldFinish;*/
 
-        
+
 
         KeywordCommandManager.Instance.AddKeywordCommandProvider(this);
     }
+
+    
 
     void Update()
     {
@@ -104,44 +106,43 @@ public class AnchorEditorUi : HoloToolkit.Unity.Singleton<AnchorEditorUi>, IKeyw
     }
 
     // from Interaction Manager
-   private void InteractionManager_SourcePressed(InteractionSourceState state)
+    private void InteractionManager_InteractionSourcePressed(InteractionSourcePressedEventArgs eventArgs)
     {
-        if ((state.source.kind == InteractionSourceKind.Controller) && (GazedAnchor != null))
+        if ((eventArgs.state.source.kind == InteractionSourceKind.Controller) && (GazedAnchor != null))
         {
             Notify.Beep();
             GrabGazedAnchor();
         }
     }
 
-    private void InteractionManager_SourceReleased(InteractionSourceState state)
+    private void InteractionManager_InteractionSourceReleased(InteractionSourceReleasedEventArgs eventArgs)
     {
-        if (state.source.kind == InteractionSourceKind.Controller)
+        if (eventArgs.state.source.kind == InteractionSourceKind.Controller)
         {
             Notify.Beep();
             ReleaseGazedAnchor();
         }
-        
     }
 
-   /* // from GayeManager
-    private void GestureRecognizer_HandleHoldStart(InteractionSourceKind source, Ray headRay)
-    {
-        if (source == InteractionSourceKind.Controller)
-        {
-            Notify.Beep();
-            GrabSelectedAnchor();
-        }
-    }
+    /* // from GayeManager
+     private void GestureRecognizer_HandleHoldStart(InteractionSourceKind source, Ray headRay)
+     {
+         if (source == InteractionSourceKind.Controller)
+         {
+             Notify.Beep();
+             GrabSelectedAnchor();
+         }
+     }
 
-    private void GestureRecognizer_HandleHoldFinish(InteractionSourceKind source, Ray headRay)
-    {
-        if (source == InteractionSourceKind.Controller)
-        {
-            Notify.Beep();
-            ReleaseSelectedAnchor();
-        }    
-    }*/
-    
+     private void GestureRecognizer_HandleHoldFinish(InteractionSourceKind source, Ray headRay)
+     {
+         if (source == InteractionSourceKind.Controller)
+         {
+             Notify.Beep();
+             ReleaseSelectedAnchor();
+         }    
+     }*/
+
 
     /// <summary>
     /// Grabs the selected anchor, if any

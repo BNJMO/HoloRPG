@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 /// <summary>
 /// Globally accessible Singleton class that allows to interact with the Application's state.
 /// </summary>
-public class ApplicationStateManager : HoloToolkit.Unity.Singleton<ApplicationStateManager>, IKeywordCommandProvider
+public class ApplicationStateManager : Singleton<ApplicationStateManager>, IKeywordCommandProvider
 {
     public enum EAppState { USER_MODE = 0, EDIT_MODE = 1 }
 

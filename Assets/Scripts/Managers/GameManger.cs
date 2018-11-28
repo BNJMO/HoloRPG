@@ -4,7 +4,7 @@ using UnityEngine;
 using System;
 
 // More like an event manager ?
-public class GameManger : HoloToolkit.Unity.Singleton<GameManger> {
+public class GameManger : Singleton<GameManger> {
 
     public bool IsInUserMode { get { return ApplicationStateManager.IsUserMode == true; } }
 

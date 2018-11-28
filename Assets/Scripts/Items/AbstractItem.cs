@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System;
-using UnityEngine.VR.WSA;
+using UnityEngine.XR.WSA;
 
 public abstract class AbstractItem : MonoBehaviour, IITem {
 

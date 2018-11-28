@@ -5,7 +5,7 @@ using UnityEngine;
 /// <summary>
 /// Abstract keyword command provider. Can be subclassed for convenience.
 /// </summary>
-public abstract class AbstractKeywordCommandProvider : HoloToolkit.Unity.Singleton<AbstractKeywordCommandProvider>, IKeywordCommandProvider {
+public abstract class AbstractKeywordCommandProvider : Singleton<AbstractKeywordCommandProvider>, IKeywordCommandProvider {
 
 	private List<KeywordCommand> empty = new List<KeywordCommand>();
 

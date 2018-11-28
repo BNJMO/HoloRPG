@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 
-public class AnchorManager : HoloToolkit.Unity.Singleton<AnchorManager>
+public class AnchorManager : Singleton<AnchorManager>
 {
     [SerializeField]
     private Transform anchorParent;

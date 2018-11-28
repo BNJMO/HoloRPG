@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.VR.WSA;
+using UnityEngine.XR.WSA;
 
 public abstract class AbstractSpell : MonoBehaviour, ISpell {
 

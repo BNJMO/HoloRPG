@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Notify : HoloToolkit.Unity.Singleton<Notify>
+public class Notify : Singleton<Notify>
 {
     
 	struct Message {

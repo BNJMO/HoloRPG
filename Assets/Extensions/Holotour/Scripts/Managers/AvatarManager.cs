@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AvatarManager : HoloToolkit.Unity.Singleton<AvatarManager>, IKeywordCommandProvider
+public class AvatarManager : Singleton<AvatarManager>, IKeywordCommandProvider
 {
 
 	public event Action OnTourStarted;

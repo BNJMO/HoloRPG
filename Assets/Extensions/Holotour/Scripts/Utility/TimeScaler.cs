@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TimeScaler : HoloToolkit.Unity.Singleton<TimeScaler> {
+public class TimeScaler : Singleton<TimeScaler> {
 
     [Range (0, 5)]
 	[SerializeField] float timeScale = 1;

@@ -4,7 +4,7 @@ using UnityEngine.UI;
 /// <summary>
 /// A basic singleton class that gives the current FPS.
 /// </summary>
-public class FPSCounter : HoloToolkit.Unity.Singleton<FPSCounter>
+public class FPSCounter : Singleton<FPSCounter>
 {
     private int myFps = 0;
     public int FPS { get { return myFps; }}

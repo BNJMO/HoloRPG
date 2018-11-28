@@ -2,14 +2,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.VR.WSA;
+
 
 public interface IRegion
 {
     string RegionName { get; }
 }
 
-public class RegionManager : HoloToolkit.Unity.Singleton<RegionManager> {
+public class RegionManager : Singleton<RegionManager> {
 
     public string CurrentRegionName { get { return isInWald ? "The Wald" : currentRegion.regionName; } }
 
@@ -300,7 +300,7 @@ public class RegionManager : HoloToolkit.Unity.Singleton<RegionManager> {
                                 center = hit.point;
                             }
                             // add components
-                            obj.AddComponent<WorldAnchor>();
+                            obj.AddComponent<UnityEngine.XR.WSA.WorldAnchor>();
                             obj.AddComponent<VisibiliterMesh>().VisibilityCondition = Condition.New(() => Utils.GetRelativeDistance(CameraHelper.Stats.camPos, obj.transform.position) < 15);
                         }
                     }
@@ -355,7 +355,7 @@ public class RegionManager : HoloToolkit.Unity.Singleton<RegionManager> {
                 }
                 if (deco != null) {
                     GameObject obj = Instantiate(deco, center, Utils.GetRndStandRotation());
-                    obj.AddComponent<WorldAnchor>();
+                    obj.AddComponent<UnityEngine.XR.WSA.WorldAnchor>();
                     obj.AddComponent<VisibiliterMesh>().VisibilityCondition = Condition.New(() => Utils.GetRelativeDistance(CameraHelper.Stats.camPos, obj.transform.position) < 15);
                 }
             }

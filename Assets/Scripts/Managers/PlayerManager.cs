@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerManager : HoloToolkit.Unity.Singleton<PlayerManager> {
+public class PlayerManager : Singleton<PlayerManager> {
 
     public int HP { get { return playerLife; } }
     public float RelativeHP { get { return (playerLife * 1.0f) / initialPlayerLife; } }

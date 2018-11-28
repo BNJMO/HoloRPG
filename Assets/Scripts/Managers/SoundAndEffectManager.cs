@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
 
-public class SoundAndEffectManager : HoloToolkit.Unity.Singleton<SoundAndEffectManager> {
+public class SoundAndEffectManager : Singleton<SoundAndEffectManager> {
 
     public const string MIXER_NAME = "HoloRPG_Mixer";
 
