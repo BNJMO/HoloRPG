@@ -271,7 +271,7 @@ PlayerSettings:
     - HoloLens
   m_BuildTargetEnableVuforiaSettings:
   - m_BuildTarget: Metro
-    m_Enabled: 1
+    m_Enabled: 0
   openGLRequireES31: 0
   openGLRequireES31AEP: 0
   m_TemplateCustomTags: {}
@@ -675,7 +675,7 @@ PlayerSettings:
   cloudServicesEnabled:
     UNet: 1
   facebookSdkVersion: 7.9.1
-  apiCompatibilityLevel: 2
+  apiCompatibilityLevel: 3
   cloudProjectId: e1a600ee-c438-4d33-810e-037a51178f0d
   projectName: HoloRPG
   organizationId: bnjmo
